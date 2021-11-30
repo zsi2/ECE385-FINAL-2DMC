@@ -1,0 +1,219 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\sizhe\Desktop\ECE385-FINAL-2DMC\drivers\vga_driver_with_framebuffer\vga_driver_with_framebuffer_soc.qsys --block-symbol-file --output-directory=C:\Users\sizhe\Desktop\ECE385-FINAL-2DMC\drivers\vga_driver_with_framebuffer\vga_driver_with_framebuffer_soc --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding epcs_flash_controller_0 [altera_avalon_epcs_flash_controller 18.1]
+Progress: Parameterizing module epcs_flash_controller_0
+Progress: Adding fifo_0 [altera_avalon_fifo 18.1]
+Progress: Parameterizing module fifo_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_sgdma [altera_avalon_sgdma 18.1]
+Progress: Parameterizing module lcd_sgdma
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_sgdma_pll [altpll 18.1]
+Progress: Parameterizing module sdram_sgdma_pll
+Progress: Adding sgdma_ta [timing_adapter 18.1]
+Progress: Parameterizing module sgdma_ta
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding vga [VGA_SINK 1.0]
+Progress: Parameterizing module vga
+Progress: Adding vga_pll [altpll 18.1]
+Progress: Parameterizing module vga_pll
+Progress: Adding vga_ta [timing_adapter 18.1]
+Progress: Parameterizing module vga_ta
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: vga_driver_with_framebuffer_soc.epcs_flash_controller_0: Legacy EPCS/EPCQx1 Flash Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: vga_driver_with_framebuffer_soc.epcs_flash_controller_0: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: vga_driver_with_framebuffer_soc.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: vga_driver_with_framebuffer_soc.lcd_sgdma: Scatter-Gather DMA Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: vga_driver_with_framebuffer_soc.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: vga_driver_with_framebuffer_soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: vga_driver_with_framebuffer_soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: vga_driver_with_framebuffer_soc.vga_ta.out/vga.avalon_streaming_sink: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: vga_driver_with_framebuffer_soc.fifo_0.out/vga_ta.in: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\sizhe\Desktop\ECE385-FINAL-2DMC\drivers\vga_driver_with_framebuffer\vga_driver_with_framebuffer_soc.qsys --synthesis=VERILOG --output-directory=C:\Users\sizhe\Desktop\ECE385-FINAL-2DMC\drivers\vga_driver_with_framebuffer\vga_driver_with_framebuffer_soc\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding epcs_flash_controller_0 [altera_avalon_epcs_flash_controller 18.1]
+Progress: Parameterizing module epcs_flash_controller_0
+Progress: Adding fifo_0 [altera_avalon_fifo 18.1]
+Progress: Parameterizing module fifo_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding lcd_sgdma [altera_avalon_sgdma 18.1]
+Progress: Parameterizing module lcd_sgdma
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_sgdma_pll [altpll 18.1]
+Progress: Parameterizing module sdram_sgdma_pll
+Progress: Adding sgdma_ta [timing_adapter 18.1]
+Progress: Parameterizing module sgdma_ta
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding vga [VGA_SINK 1.0]
+Progress: Parameterizing module vga
+Progress: Adding vga_pll [altpll 18.1]
+Progress: Parameterizing module vga_pll
+Progress: Adding vga_ta [timing_adapter 18.1]
+Progress: Parameterizing module vga_ta
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: vga_driver_with_framebuffer_soc.epcs_flash_controller_0: Legacy EPCS/EPCQx1 Flash Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: vga_driver_with_framebuffer_soc.epcs_flash_controller_0: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: vga_driver_with_framebuffer_soc.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: vga_driver_with_framebuffer_soc.lcd_sgdma: Scatter-Gather DMA Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: vga_driver_with_framebuffer_soc.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: vga_driver_with_framebuffer_soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: vga_driver_with_framebuffer_soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: vga_driver_with_framebuffer_soc.vga_ta.out/vga.avalon_streaming_sink: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: vga_driver_with_framebuffer_soc.fifo_0.out/vga_ta.in: Ready latency is 1 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Info: vga_driver_with_framebuffer_soc: Generating vga_driver_with_framebuffer_soc "vga_driver_with_framebuffer_soc" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src6 and cmd_mux_006.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src7 and cmd_mux_007.sink0
+Info: Inserting clock-crossing logic between cmd_demux_003.src3 and cmd_mux_006.sink1
+Info: Inserting clock-crossing logic between cmd_demux_003.src4 and cmd_mux_007.sink1
+Info: Inserting clock-crossing logic between rsp_demux_006.src0 and rsp_mux.sink6
+Info: Inserting clock-crossing logic between rsp_demux_006.src1 and rsp_mux_003.sink3
+Info: Inserting clock-crossing logic between rsp_demux_007.src0 and rsp_mux.sink7
+Info: Inserting clock-crossing logic between rsp_demux_007.src1 and rsp_mux_003.sink4
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_0
+Info: epcs_flash_controller_0: Starting RTL generation for module 'vga_driver_with_framebuffer_soc_epcs_flash_controller_0'
+Info: epcs_flash_controller_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller/generate_rtl.pl --name=vga_driver_with_framebuffer_soc_epcs_flash_controller_0 --dir=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0054_epcs_flash_controller_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0054_epcs_flash_controller_0_gen//vga_driver_with_framebuffer_soc_epcs_flash_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: epcs_flash_controller_0: Done RTL generation for module 'vga_driver_with_framebuffer_soc_epcs_flash_controller_0'
+Info: epcs_flash_controller_0: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_epcs_flash_controller "epcs_flash_controller_0"
+Info: fifo_0: Starting RTL generation for module 'vga_driver_with_framebuffer_soc_fifo_0'
+Info: fifo_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=vga_driver_with_framebuffer_soc_fifo_0 --dir=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0055_fifo_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0055_fifo_0_gen//vga_driver_with_framebuffer_soc_fifo_0_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_0: Done RTL generation for module 'vga_driver_with_framebuffer_soc_fifo_0'
+Info: fifo_0: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_fifo "fifo_0"
+Info: jtag_uart_0: Starting RTL generation for module 'vga_driver_with_framebuffer_soc_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=vga_driver_with_framebuffer_soc_jtag_uart_0 --dir=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0056_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0056_jtag_uart_0_gen//vga_driver_with_framebuffer_soc_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'vga_driver_with_framebuffer_soc_jtag_uart_0'
+Info: jtag_uart_0: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: lcd_sgdma: Starting RTL generation for module 'vga_driver_with_framebuffer_soc_lcd_sgdma'
+Info: lcd_sgdma:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=vga_driver_with_framebuffer_soc_lcd_sgdma --dir=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0057_lcd_sgdma_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0057_lcd_sgdma_gen//vga_driver_with_framebuffer_soc_lcd_sgdma_component_configuration.pl  --do_build_sim=0  ]
+Info: lcd_sgdma: Done RTL generation for module 'vga_driver_with_framebuffer_soc_lcd_sgdma'
+Info: lcd_sgdma: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_sgdma "lcd_sgdma"
+Info: nios2_gen2_0: "vga_driver_with_framebuffer_soc" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'vga_driver_with_framebuffer_soc_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=vga_driver_with_framebuffer_soc_onchip_memory2_0 --dir=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0058_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0058_onchip_memory2_0_gen//vga_driver_with_framebuffer_soc_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'vga_driver_with_framebuffer_soc_onchip_memory2_0'
+Info: onchip_memory2_0: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: sdram: Starting RTL generation for module 'vga_driver_with_framebuffer_soc_sdram'
+Info: sdram:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=vga_driver_with_framebuffer_soc_sdram --dir=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0059_sdram_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0059_sdram_gen//vga_driver_with_framebuffer_soc_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'vga_driver_with_framebuffer_soc_sdram'
+Info: sdram: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sdram_sgdma_pll: "vga_driver_with_framebuffer_soc" instantiated altpll "sdram_sgdma_pll"
+Info: sgdma_ta: "vga_driver_with_framebuffer_soc" instantiated timing_adapter "sgdma_ta"
+Info: sysid_qsys_0: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: vga: "vga_driver_with_framebuffer_soc" instantiated VGA_SINK "vga"
+Info: vga_pll: "vga_driver_with_framebuffer_soc" instantiated altpll "vga_pll"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "vga_driver_with_framebuffer_soc" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "vga_driver_with_framebuffer_soc" instantiated altera_irq_mapper "irq_mapper"
+Info: avalon_st_adapter: "vga_driver_with_framebuffer_soc" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: rst_controller: "vga_driver_with_framebuffer_soc" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'vga_driver_with_framebuffer_soc_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=vga_driver_with_framebuffer_soc_nios2_gen2_0_cpu --dir=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0069_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/sizhe/AppData/Local/Temp/alt8960_7221881157861198676.dir/0069_cpu_gen//vga_driver_with_framebuffer_soc_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2021.11.30 14:05:24 (*) Starting Nios II generation
+Info: cpu: # 2021.11.30 14:05:24 (*)   Checking for plaintext license.
+Info: cpu: # 2021.11.30 14:05:25 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2021.11.30 14:05:25 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.11.30 14:05:25 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.11.30 14:05:25 (*)   Plaintext license not found.
+Info: cpu: # 2021.11.30 14:05:25 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2021.11.30 14:05:27 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/18.1/quartus/bin64/
+Info: cpu: # 2021.11.30 14:05:27 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.11.30 14:05:27 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.11.30 14:05:27 (*)   Encrypted license not found.  Defaulting to OCP evaluation license (produces a time-limited SOF)
+Info: cpu: # 2021.11.30 14:05:27 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.11.30 14:05:27 (*)   Creating all objects for CPU
+Info: cpu: # 2021.11.30 14:05:27 (*)     Testbench
+Info: cpu: # 2021.11.30 14:05:27 (*)     Instruction decoding
+Info: cpu: # 2021.11.30 14:05:27 (*)       Instruction fields
+Info: cpu: # 2021.11.30 14:05:27 (*)       Instruction decodes
+Info: cpu: # 2021.11.30 14:05:28 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2021.11.30 14:05:28 (*)       Instruction controls
+Info: cpu: # 2021.11.30 14:05:28 (*)     Pipeline frontend
+Info: cpu: # 2021.11.30 14:05:28 (*)     Pipeline backend
+Info: cpu: # 2021.11.30 14:05:30 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.11.30 14:05:32 (*)   Creating encrypted RTL
+Info: cpu: # 2021.11.30 14:05:33 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'vga_driver_with_framebuffer_soc_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: router_013: "mm_interconnect_0" instantiated altera_merlin_router "router_013"
+Info: router_014: "mm_interconnect_0" instantiated altera_merlin_router "router_014"
+Info: nios2_gen2_0_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "nios2_gen2_0_data_master_limiter"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_003"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_008: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_008"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_009: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_009"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_demux_006: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_006"
+Info: rsp_demux_008: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_008"
+Info: rsp_demux_009: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_009"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_003"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/drivers/vga_driver_with_framebuffer/vga_driver_with_framebuffer_soc/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: vga_driver_with_framebuffer_soc: Done "vga_driver_with_framebuffer_soc" with 50 modules, 77 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
