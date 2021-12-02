@@ -18,8 +18,8 @@ for root, dirs, files in os.walk(r"Pictures may used\bmp"):
                 temp_str = "24'h"
                 for i in range(len(item)):
                     add_str = str(hex(item[i])[2:])
-                    if add_str == '0':
-                        add_str = '00'
+                    if len(add_str) == 1:
+                        add_str = '0' + add_str
                     temp_str = temp_str + add_str
                 f.write(temp_str)
                 f.write(',')
