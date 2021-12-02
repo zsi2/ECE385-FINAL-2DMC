@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
+temp = []
 
 for root, dirs, files in os.walk(r"Pictures may used\bmp"):
     for file in files:
@@ -14,7 +15,13 @@ for root, dirs, files in os.walk(r"Pictures may used\bmp"):
             txt_name = file_name + '.txt'
             f = open(os.path.join(r'Pictures may used\txt', txt_name), 'w')
             for item in pixel_values:
-                temp = str(item)
-                f.write(temp)
+                temp_str = "24'h"
+                for i in range(len(item)):
+                    add_str = str(hex(item[i])[2:])
+                    if add_str == '0':
+                        add_str = '00'
+                    temp_str = temp_str + add_str
+                f.write(temp_str)
+                f.write(',')
                 f.write('\n')
             f.close()
