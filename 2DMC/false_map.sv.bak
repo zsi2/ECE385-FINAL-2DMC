@@ -1,0 +1,24 @@
+module false_map
+
+(
+
+	input logic [3:0] x,y,
+	
+	output logic [3:0] id
+
+
+);
+
+	parameter bit [3:0] false_map [191:0]= '{
+	
+	4'b
+	
+	
+	
+	
+	}
+
+
+
+
+endmodule

@@ -1,0 +1,10 @@
+module rxycalc 
+(
+	input logic [9:0] DrawX,DrawY,
+	
+	
+	output logic [3:0]x,y,
+	
+	output logic [5:0] relx,rely
+
+);
