@@ -5,7 +5,7 @@ import os
 
 temp = []
 
-for root, dirs, files in os.walk(r"Pictures may used\bmp"):
+for root, dirs, files in os.walk(r"Pictures\Charcter\bmp"):
     for file in files:
         file_name, file_extension = os.path.splitext(file)
         if file_extension == '.bmp':
@@ -13,7 +13,7 @@ for root, dirs, files in os.walk(r"Pictures may used\bmp"):
             pixel_values = list(img.getdata())
             img.close()
             txt_name = file_name + '.txt'
-            f = open(os.path.join(r'Pictures may used\txt', txt_name), 'w')
+            f = open(os.path.join(r'Pictures\Charcter\txt', txt_name), 'w')
             for item in pixel_values:
                 temp_str = "24'h"
                 for i in range(len(item)):
