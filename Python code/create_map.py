@@ -105,8 +105,8 @@ for column_index in range(columns):
         if row_index < 20 and random.randint(0, 54) == 0:
             ndarray_map[column_index][row_index] = "Dia_Ore"
 
-f = open(os.path.join(r'Pictures\Map\txt', 'Map.txt'), 'w')
-g = open(os.path.join(r'Pictures\Map\txt', 'MapIndex.txt'), 'w')
+f = open(os.path.join(r'Pictures\Map', 'Map.txt'), 'w')
+g = open(os.path.join(r'Pictures\Map', 'MapIndex.txt'), 'w')
 for row_index in range(rows):
     temp = "512'b"
     for column_index in range(columns):
