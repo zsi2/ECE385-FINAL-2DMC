@@ -1,0 +1,11 @@
+module maptable
+(
+	input logic [3:0] x,y, // x:0-15,y:0-11
+	
+	input logic clk,reset,
+	
+	input logic [3:0] id_in,
+	
+	output logic [3:0] id //block id
+
+)
