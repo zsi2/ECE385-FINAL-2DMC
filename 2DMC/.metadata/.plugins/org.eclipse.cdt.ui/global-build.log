@@ -1068,3 +1068,21 @@ Info:                16297 KBytes free for stack + heap.
 Info: Creating lab8_app.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source lab8_app.elf >lab8_app.objdump
 [lab8_app build complete]
+19:02:56 **** Incremental Build of configuration Nios II for project lab8_app ****
+make all 
+Info: Building ../lab8_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab8_app_bsp/
+[BSP build complete]
+[lab8_app build complete]
+19:15:07 **** Incremental Build of configuration Nios II for project lab8_app ****
+make all 
+Info: Building ../lab8_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab8_app_bsp/
+[BSP build complete]
+[lab8_app build complete]
+19:25:08 **** Incremental Build of configuration Nios II for project lab8_app ****
+make all 
+Info: Building ../lab8_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../lab8_app_bsp/
+[BSP build complete]
+[lab8_app build complete]

@@ -16,6 +16,7 @@
 module lab8( input               CLOCK_50,
              input        [3:0]  KEY,          //bit 0 is set up as Reset
              output logic [6:0]  HEX0, HEX1,
+				 output logic [9:0]  LEDR,
              // VGA Interface 
              output logic [7:0]  VGA_R,        //VGA Red
                                  VGA_G,        //VGA Green
@@ -119,12 +120,17 @@ module lab8( input               CLOCK_50,
     color_mapper color_instance(.*);
 	 
 	 logic [6:0] corner_x,corner_y;
-	 
+	 logic is_steve,left_en,right_en,top_en,down_en;
+	 logic [3:0] x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,x11,x12;
+	 logic [6:0] steve_relx,steve_rely;
 	 Steve steve (.*,.Reset(Reset_h),.frame_clk(VGA_VS));
-    
+    logic [9:0] pixelyd,pixelxr;
     // Display keycode on hex display
     HexDriver hex_inst_0 (keycode[3:0], HEX0);
     HexDriver hex_inst_1 (keycode[7:4], HEX1);
+	 
+	 assign LEDR={is_steve,pixelxr};
+
     
     /**************************************************************************************
         ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!
