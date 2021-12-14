@@ -1,5 +1,5 @@
 Flow report for lab8
-Sat Dec 11 22:25:57 2021
+Tue Dec 14 16:42:40 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 11 22:25:44 2021       ;
+; Flow Status                        ; Successful - Tue Dec 14 16:42:36 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab8                                        ;
 ; Top-level Entity Name              ; lab8                                        ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 10,850 / 114,480 ( 9 % )                    ;
-;     Total combinational functions  ; 10,841 / 114,480 ( 9 % )                    ;
+; Total logic elements               ; 11,133 / 114,480 ( 10 % )                   ;
+;     Total combinational functions  ; 11,117 / 114,480 ( 10 % )                   ;
 ;     Dedicated logic registers      ; 680 / 114,480 ( < 1 % )                     ;
 ; Total registers                    ; 680                                         ;
 ; Total pins                         ; 168 / 529 ( 32 % )                          ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/11/2021 22:22:56 ;
+; Start date & time ; 12/14/2021 16:40:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-----------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name     ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 220964530223446.163923257527120        ; --            ; --              ; --             ;
+; COMPILER_SIGNATURE_ID                ; 172308995104599.163947125116789        ; --            ; --              ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --              ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --              ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; None                                   ; --            ; --              ; eda_simulation ;
@@ -105,24 +105,24 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:51     ; 1.0                     ; 4861 MB             ; 00:02:06                           ;
-; Fitter               ; 00:00:45     ; 1.1                     ; 6106 MB             ; 00:01:23                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4710 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.3                     ; 4969 MB             ; 00:00:12                           ;
-; Total                ; 00:02:53     ; --                      ; --                  ; 00:03:47                           ;
+; Analysis & Synthesis ; 00:01:05     ; 1.0                     ; 1069 MB             ; 00:01:16                           ;
+; Fitter               ; 00:00:35     ; 1.1                     ; 2038 MB             ; 00:01:02                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 835 MB              ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.4                     ; 1047 MB             ; 00:00:05                           ;
+; Total                ; 00:01:47     ; --                      ; --                  ; 00:02:26                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++-----------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                               ;
++----------------------+-------------------------+----------------+------------+----------------+
+; Module Name          ; Machine Hostname        ; OS Name        ; OS Version ; Processor type ;
++----------------------+-------------------------+----------------+------------+----------------+
+; Analysis & Synthesis ; zhenzuo-Alienware-17-R5 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; Fitter               ; zhenzuo-Alienware-17-R5 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; Assembler            ; zhenzuo-Alienware-17-R5 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; Timing Analyzer      ; zhenzuo-Alienware-17-R5 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
++----------------------+-------------------------+----------------+------------+----------------+
 
 
 ------------

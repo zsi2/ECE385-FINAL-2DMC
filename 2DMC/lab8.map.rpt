@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab8
-Sat Dec 11 22:24:46 2021
+Tue Dec 14 16:41:56 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -68,13 +68,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 11 22:24:46 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 14 16:41:56 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab8                                        ;
 ; Top-level Entity Name              ; lab8                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 10,850                                      ;
-;     Total combinational functions  ; 10,841                                      ;
+; Total logic elements               ; 11,126                                      ;
+;     Total combinational functions  ; 11,117                                      ;
 ;     Dedicated logic registers      ; 680                                         ;
 ; Total registers                    ; 680                                         ;
 ; Total pins                         ; 168                                         ;
@@ -192,29 +192,29 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
-; keyboard.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/keyboard.sv                  ;         ;
-; rxycalc.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/rxycalc.sv                   ;         ;
-; VGA_controller.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/VGA_controller.sv            ;         ;
-; lab8.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv                      ;         ;
-; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/HexDriver.sv                 ;         ;
-; Color_Mapper.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv              ;         ;
-; vga_clk.v                        ; yes             ; User Wizard-Generated File   ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/vga_clk.v                    ;         ;
-; artrom.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/artrom.sv                    ;         ;
-; false_map.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/false_map.sv                 ;         ;
-; accelerated_screen_buffer.sv     ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/accelerated_screen_buffer.sv ;         ;
-; Steve.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Steve.sv                     ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf          ;         ;
-; aglobal181.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc      ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_pll.inc     ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratixii_pll.inc   ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc   ;         ;
-; db/vga_clk_altpll.v              ; yes             ; Auto-Generated Megafunction  ; C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/db/vga_clk_altpll.v          ;         ;
-+----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                            ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                        ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
+; keyboard.sv                      ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/keyboard.sv                          ;         ;
+; rxycalc.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/rxycalc.sv                           ;         ;
+; VGA_controller.sv                ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/VGA_controller.sv                    ;         ;
+; lab8.sv                          ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv                              ;         ;
+; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/HexDriver.sv                         ;         ;
+; Color_Mapper.sv                  ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv                      ;         ;
+; vga_clk.v                        ; yes             ; User Wizard-Generated File   ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/vga_clk.v                            ;         ;
+; artrom.sv                        ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/artrom.sv                            ;         ;
+; false_map.sv                     ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/false_map.sv                         ;         ;
+; accelerated_screen_buffer.sv     ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/accelerated_screen_buffer.sv         ;         ;
+; Steve.sv                         ; yes             ; User SystemVerilog HDL File  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Steve.sv                             ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; /home/zhenzuo/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altpll.tdf        ;         ;
+; aglobal181.inc                   ; yes             ; Megafunction                 ; /home/zhenzuo/intelFPGA_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc    ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; /home/zhenzuo/intelFPGA_lite/18.1/quartus/libraries/megafunctions/stratix_pll.inc   ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; /home/zhenzuo/intelFPGA_lite/18.1/quartus/libraries/megafunctions/stratixii_pll.inc ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; /home/zhenzuo/intelFPGA_lite/18.1/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
+; db/vga_clk_altpll.v              ; yes             ; Auto-Generated Megafunction  ; /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/db/vga_clk_altpll.v                  ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -222,17 +222,17 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------------------+
 ; Resource                                    ; Usage                                        ;
 +---------------------------------------------+----------------------------------------------+
-; Estimated Total logic elements              ; 10,850                                       ;
+; Estimated Total logic elements              ; 11,126                                       ;
 ;                                             ;                                              ;
-; Total combinational functions               ; 10841                                        ;
+; Total combinational functions               ; 11117                                        ;
 ; Logic element usage by number of LUT inputs ;                                              ;
-;     -- 4 input functions                    ; 9236                                         ;
-;     -- 3 input functions                    ; 1082                                         ;
-;     -- <=2 input functions                  ; 523                                          ;
+;     -- 4 input functions                    ; 9524                                         ;
+;     -- 3 input functions                    ; 1121                                         ;
+;     -- <=2 input functions                  ; 472                                          ;
 ;                                             ;                                              ;
 ; Logic elements by mode                      ;                                              ;
-;     -- normal mode                          ; 10602                                        ;
-;     -- arithmetic mode                      ; 239                                          ;
+;     -- normal mode                          ; 10883                                        ;
+;     -- arithmetic mode                      ; 234                                          ;
 ;                                             ;                                              ;
 ; Total registers                             ; 680                                          ;
 ;     -- Dedicated logic registers            ; 680                                          ;
@@ -246,9 +246,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                            ;
 ;                                             ;                                              ;
 ; Maximum fan-out node                        ; color_mapper:color_instance|artrom:a0|Add1~0 ;
-; Maximum fan-out                             ; 1570                                         ;
-; Total fan-out                               ; 42975                                        ;
-; Average fan-out                             ; 3.61                                         ;
+; Maximum fan-out                             ; 1565                                         ;
+; Total fan-out                               ; 44165                                        ;
+; Average fan-out                             ; 3.63                                         ;
 +---------------------------------------------+----------------------------------------------+
 
 
@@ -257,28 +257,29 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Entity Name               ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+---------------------------+--------------+
-; |lab8                                       ; 10841 (2)           ; 680 (1)                   ; 0           ; 0            ; 0       ; 0         ; 168  ; 0            ; |lab8                                                                                ; lab8                      ; work         ;
-;    |HexDriver:hex_inst_0|                   ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_0                                                           ; HexDriver                 ; work         ;
+; |lab8                                       ; 11117 (2)           ; 680 (1)                   ; 0           ; 0            ; 0       ; 0         ; 168  ; 0            ; |lab8                                                                                ; lab8                      ; work         ;
+;    |HexDriver:hex_inst_0|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_0                                                           ; HexDriver                 ; work         ;
 ;    |HexDriver:hex_inst_1|                   ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_1                                                           ; HexDriver                 ; work         ;
 ;    |HexDriver:hex_inst_2|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_2                                                           ; HexDriver                 ; work         ;
 ;    |HexDriver:hex_inst_3|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_3                                                           ; HexDriver                 ; work         ;
 ;    |HexDriver:hex_inst_4|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_4                                                           ; HexDriver                 ; work         ;
 ;    |HexDriver:hex_inst_5|                   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_5                                                           ; HexDriver                 ; work         ;
-;    |Steve:steve|                            ; 481 (257)           ; 52 (52)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve                                                                    ; Steve                     ; work         ;
-;       |rxycalc:r10|                         ; 48 (48)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r10                                                        ; rxycalc                   ; work         ;
+;    |Steve:steve|                            ; 537 (316)           ; 52 (52)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve                                                                    ; Steve                     ; work         ;
+;       |rxycalc:r10|                         ; 46 (46)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r10                                                        ; rxycalc                   ; work         ;
 ;       |rxycalc:r11|                         ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r11                                                        ; rxycalc                   ; work         ;
-;       |rxycalc:r12|                         ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r12                                                        ; rxycalc                   ; work         ;
-;       |rxycalc:r1|                          ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r1                                                         ; rxycalc                   ; work         ;
-;       |rxycalc:r4|                          ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r4                                                         ; rxycalc                   ; work         ;
-;       |rxycalc:r5|                          ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r5                                                         ; rxycalc                   ; work         ;
-;       |rxycalc:r6|                          ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r6                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r12|                         ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r12                                                        ; rxycalc                   ; work         ;
+;       |rxycalc:r1|                          ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r1                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r2|                          ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r2                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r3|                          ; 25 (25)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r3                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r4|                          ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r4                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r7|                          ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r7                                                         ; rxycalc                   ; work         ;
 ;    |VGA_controller:vga_controller_instance| ; 60 (60)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|VGA_controller:vga_controller_instance                                         ; VGA_controller            ; work         ;
-;    |color_mapper:color_instance|            ; 10188 (132)         ; 576 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance                                                    ; color_mapper              ; work         ;
-;       |accelerated_screen_buffer:sb|        ; 2440 (2440)         ; 576 (576)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb                       ; accelerated_screen_buffer ; work         ;
-;       |artrom:a0|                           ; 6005 (6005)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|artrom:a0                                          ; artrom                    ; work         ;
-;       |false_map:f0|                        ; 1467 (1467)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|false_map:f0                                       ; false_map                 ; work         ;
-;       |rxycalc:r|                           ; 144 (144)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|rxycalc:r                                          ; rxycalc                   ; work         ;
-;    |keyboard:key1|                          ; 53 (53)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|keyboard:key1                                                                  ; keyboard                  ; work         ;
+;    |color_mapper:color_instance|            ; 10409 (129)         ; 576 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance                                                    ; color_mapper              ; work         ;
+;       |accelerated_screen_buffer:sb|        ; 2459 (2459)         ; 576 (576)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb                       ; accelerated_screen_buffer ; work         ;
+;       |artrom:a0|                           ; 5993 (5993)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|artrom:a0                                          ; artrom                    ; work         ;
+;       |false_map:f0|                        ; 1688 (1688)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|false_map:f0                                       ; false_map                 ; work         ;
+;       |rxycalc:r|                           ; 140 (140)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|rxycalc:r                                          ; rxycalc                   ; work         ;
+;    |keyboard:key1|                          ; 59 (59)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|keyboard:key1                                                                  ; keyboard                  ; work         ;
 ;    |vga_clk:vga_clk_instance|               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|vga_clk:vga_clk_instance                                                       ; vga_clk                   ; work         ;
 ;       |altpll:altpll_component|             ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|vga_clk:vga_clk_instance|altpll:altpll_component                               ; altpll                    ; work         ;
 ;          |vga_clk_altpll:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|vga_clk:vga_clk_instance|altpll:altpll_component|vga_clk_altpll:auto_generated ; vga_clk_altpll            ; work         ;
@@ -500,14 +501,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                 ;
-+------------------------+---------------------------+----------------------------------------+
-; Register name          ; Reason for Removal        ; Registers Removed due to This Register ;
-+------------------------+---------------------------+----------------------------------------+
-; Steve:steve|checkxr[0] ; Stuck at GND              ; Steve:steve|pixelxl[0]                 ;
-;                        ; due to stuck port data_in ;                                        ;
-+------------------------+---------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                    ;
++---------------------------+---------------------------+----------------------------------------+
+; Register name             ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------+---------------------------+----------------------------------------+
+; Steve:steve|checkyfoot[0] ; Stuck at GND              ; Steve:steve|pixelyu[0]                 ;
+;                           ; due to stuck port data_in ;                                        ;
+; Steve:steve|checkxr[0]    ; Stuck at GND              ; Steve:steve|pixelxl[0]                 ;
+;                           ; due to stuck port data_in ;                                        ;
++---------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -516,8 +519,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 680   ;
-; Number of registers using Synchronous Clear  ; 17    ;
-; Number of registers using Synchronous Load   ; 26    ;
+; Number of registers using Synchronous Clear  ; 23    ;
+; Number of registers using Synchronous Load   ; 33    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 57    ;
@@ -530,93 +533,105 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |lab8|Steve:steve|y[3]                                                      ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|VGA_controller:vga_controller_instance|h_counter[2]                   ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|keyboard:key1|bit_counter[0]                                          ;
-; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][36]  ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][32]  ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][48]  ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][20]  ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][48]  ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |lab8|Steve:steve|x[3]                                                      ;
-; 5:1                ; 18 bits   ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |lab8|Steve:steve|checkyfoot[3]                                             ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][45]  ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][48]  ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][48]  ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][49]  ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][52]  ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][32] ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][20] ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][21] ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][44]  ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][53]  ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][20]  ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][37]  ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][40]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|VGA_controller:vga_controller_instance|h_counter[1]                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|keyboard:key1|bit_counter[1]                                          ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][12]  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][8]   ;
+; 5:1                ; 14 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][16]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][12]  ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][48]  ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |lab8|Steve:steve|x[6]                                                      ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |lab8|Steve:steve|y[5]                                                      ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][13]  ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 9 LEs                ; 3 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][16]  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
+; 6:1                ; 14 bits   ; 56 LEs        ; 42 LEs               ; 14 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][32]  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][17]  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][12]  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][52]  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][24] ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][60] ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][45] ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][28]  ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][61]  ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][44]  ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][53]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][32]  ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |lab8|Steve:steve|checkyfoot[2]                                             ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][44] ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][1]   ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][12]  ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][20]  ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][25]  ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][48]  ;
-; 7:1                ; 18 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |lab8|Steve:steve|checkxr[6]                                                ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][45]  ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][17]  ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][17] ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][48] ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][57] ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][53]  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][12]  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][28]  ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 18 LEs               ; 6 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][36]  ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][44]  ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][9]   ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][8]   ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][9]   ;
+; 7:1                ; 12 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|Steve:steve|checkyfoot[6]                                             ;
+; 7:1                ; 18 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |lab8|Steve:steve|pixelxl[1]                                                ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][13]  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][25]  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][41] ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][24] ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][41] ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][40]  ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][17]  ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][56]  ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][1]   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][49]  ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][36]  ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][28]  ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][52]  ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][49]  ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][37]  ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][53] ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][61]  ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][53]  ;
-; 10:1               ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][9]   ;
-; 11:1               ; 8 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][29]  ;
-; 13:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][29]  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux366                       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux342                       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux382                       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux126                       ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |lab8|VGA_controller:vga_controller_instance|v_counter_in[4]                ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux726                       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux494                       ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][41]  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][25]  ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][12]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][20]  ;
+; 9:1                ; 6 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][44]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][20]  ;
+; 9:1                ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][49]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][5]   ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][21]  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][29] ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][29]  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][37]  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][49]  ;
+; 11:1               ; 5 bits    ; 35 LEs        ; 20 LEs               ; 15 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][45]  ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][21]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux323                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux323                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux331                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux83                        ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |lab8|VGA_controller:vga_controller_instance|v_counter_in[1]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux742                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux502                       ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux238                       ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux326                       ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux366                       ;
-; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux230       ;
-; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux257       ;
-; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux155       ;
-; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux205       ;
-; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux81        ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux323                       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux339                       ;
+; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux534       ;
+; 16:1               ; 9 bits    ; 90 LEs        ; 72 LEs               ; 18 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux675       ;
+; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux599       ;
+; 16:1               ; 9 bits    ; 90 LEs        ; 72 LEs               ; 18 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux519       ;
+; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux89        ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux101       ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux311       ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux362       ;
+; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux213       ;
+; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux625       ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[3]                                  ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[0]                                  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_R[4]                                  ;
 ; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_G[5]                                  ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[7]                                  ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_G[7]                                  ;
 ; 9:1                ; 5 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[2]                                  ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_R[7]                                  ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|y[1]                            ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r4|y[3]                                           ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r5|y[1]                                           ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r6|y[3]                                           ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[6]                                  ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|y[3]                            ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r7|y[1]                                           ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r1|y[1]                                           ;
 ; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r10|y[3]                                          ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|x[3]                            ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r2|y[1]                                           ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r3|y[1]                                           ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|x[2]                            ;
 ; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r10|x[2]                                          ;
 ; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r1|x[2]                                           ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r4|x[3]                                           ;
 ; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r11|x[2]                                          ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r12|x[3]                                          ;
-; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux50        ;
-; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux569       ;
-; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux621       ;
-; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux673       ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r12|x[2]                                          ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r4|x[3]                                           ;
+; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux51        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 
 
@@ -1070,7 +1085,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; false_map      ; 00000000000000000000000000000000000000000000000000100000000000000000000000000000 ;              ;
 ; false_map      ; 0000000000000000,000000000000000000000000000000000000000000000000001000000000000 ;              ;
 ; false_map      ; 000000000000000000000000000000000,0000000000000000000000000000000000000000000000 ;              ;
-; false_map      ; 00001000000000000000000000000000000000000000000000,00000000000000000000000000000 ;              ;
+; false_map      ; 00001000000000000000000000000000000000000000000000,00000000000000110000000000000 ;              ;
 ; false_map      ; 0000000000000000000000001000100010001000100010001000100010001000100,001100110011 ;              ;
 ; false_map      ; 00110011001100110011001100110011001100110011001100110011001100110011001100110011 ;              ;
 ; false_map      ; 0011,001100110011001100110011001100110011001100110011001100110011001100110011001 ;              ;
@@ -4340,26 +4355,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 168                         ;
 ; cycloneiii_ff         ; 680                         ;
 ;     ENA               ; 34                          ;
-;     ENA SCLR          ; 5                           ;
-;     ENA SLD           ; 18                          ;
+;     ENA SCLR          ; 8                           ;
+;     ENA SLD           ; 15                          ;
 ;     SCLR              ; 12                          ;
-;     SLD               ; 8                           ;
-;     plain             ; 603                         ;
+;     SCLR SLD          ; 3                           ;
+;     SLD               ; 15                          ;
+;     plain             ; 593                         ;
 ; cycloneiii_io_obuf    ; 48                          ;
-; cycloneiii_lcell_comb ; 10845                       ;
-;     arith             ; 239                         ;
-;         2 data inputs ; 156                         ;
-;         3 data inputs ; 83                          ;
-;     normal            ; 10606                       ;
+; cycloneiii_lcell_comb ; 11121                       ;
+;     arith             ; 234                         ;
+;         2 data inputs ; 131                         ;
+;         3 data inputs ; 103                         ;
+;     normal            ; 10887                       ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 29                          ;
-;         2 data inputs ; 341                         ;
-;         3 data inputs ; 999                         ;
-;         4 data inputs ; 9236                        ;
+;         1 data inputs ; 26                          ;
+;         2 data inputs ; 318                         ;
+;         3 data inputs ; 1018                        ;
+;         4 data inputs ; 9524                        ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 20.40                       ;
-; Average LUT depth     ; 14.18                       ;
+; Average LUT depth     ; 14.34                       ;
 +-----------------------+-----------------------------+
 
 
@@ -4368,7 +4384,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:31     ;
+; Top            ; 00:00:56     ;
 +----------------+--------------+
 
 
@@ -4378,54 +4394,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Dec 11 22:22:54 2021
+    Info: Processing started: Tue Dec 14 16:40:50 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file keyboard.sv
-    Info (12023): Found entity 1: keyboard File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/keyboard.sv Line: 5
+    Info (12023): Found entity 1: keyboard File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/keyboard.sv Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file ball.sv
-    Info (12023): Found entity 1: ball File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/ball.sv Line: 17
+    Info (12023): Found entity 1: ball File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/ball.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file rxycalc.sv
-    Info (12023): Found entity 1: rxycalc File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/rxycalc.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
-    Info (12023): Found entity 1: VGA_controller File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/VGA_controller.sv Line: 26
+    Info (12023): Found entity 1: rxycalc File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/rxycalc.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file VGA_controller.sv
+    Info (12023): Found entity 1: VGA_controller File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/VGA_controller.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file lab8.sv
-    Info (12023): Found entity 1: lab8 File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 16
-Info (12021): Found 1 design units, including 1 entities, in source file hexdriver.sv
-    Info (12023): Found entity 1: HexDriver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/HexDriver.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file color_mapper.sv
-    Info (12023): Found entity 1: color_mapper File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 17
+    Info (12023): Found entity 1: lab8 File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file HexDriver.sv
+    Info (12023): Found entity 1: HexDriver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/HexDriver.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file Color_Mapper.sv
+    Info (12023): Found entity 1: color_mapper File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file vga_clk.v
-    Info (12023): Found entity 1: vga_clk File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 40
+    Info (12023): Found entity 1: vga_clk File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file artrom.sv
-    Info (12023): Found entity 1: artrom File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/artrom.sv Line: 1
+    Info (12023): Found entity 1: artrom File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/artrom.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file false_map.sv
-    Info (12023): Found entity 1: false_map File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/false_map.sv Line: 1
+    Info (12023): Found entity 1: false_map File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/false_map.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file accelerated_screen_buffer.sv
-    Info (12023): Found entity 1: accelerated_screen_buffer File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/accelerated_screen_buffer.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file steve.sv
-    Info (12023): Found entity 1: Steve File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Steve.sv Line: 1
+    Info (12023): Found entity 1: accelerated_screen_buffer File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/accelerated_screen_buffer.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file Steve.sv
+    Info (12023): Found entity 1: Steve File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Steve.sv Line: 1
 Info (12127): Elaborating entity "lab8" for the top level hierarchy
-Warning (10034): Output port "OTG_ADDR" at lab8.sv(32) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 32
-Warning (10034): Output port "DRAM_ADDR" at lab8.sv(39) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-Warning (10034): Output port "DRAM_BA" at lab8.sv(41) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 41
-Warning (10034): Output port "DRAM_DQM" at lab8.sv(42) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
-Warning (10034): Output port "OTG_CS_N" at lab8.sv(33) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 33
-Warning (10034): Output port "OTG_RD_N" at lab8.sv(34) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 34
-Warning (10034): Output port "OTG_WR_N" at lab8.sv(35) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 35
-Warning (10034): Output port "OTG_RST_N" at lab8.sv(36) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 36
-Warning (10034): Output port "DRAM_RAS_N" at lab8.sv(43) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 43
-Warning (10034): Output port "DRAM_CAS_N" at lab8.sv(44) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 44
-Warning (10034): Output port "DRAM_CKE" at lab8.sv(45) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 45
-Warning (10034): Output port "DRAM_WE_N" at lab8.sv(46) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 46
-Warning (10034): Output port "DRAM_CS_N" at lab8.sv(47) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 47
-Warning (10034): Output port "DRAM_CLK" at lab8.sv(49) has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 49
-Info (12128): Elaborating entity "keyboard" for hierarchy "keyboard:key1" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 70
-Info (12128): Elaborating entity "vga_clk" for hierarchy "vga_clk:vga_clk_instance" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 77
-Info (12128): Elaborating entity "altpll" for hierarchy "vga_clk:vga_clk_instance|altpll:altpll_component" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 91
-Info (12130): Elaborated megafunction instantiation "vga_clk:vga_clk_instance|altpll:altpll_component" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 91
-Info (12133): Instantiated megafunction "vga_clk:vga_clk_instance|altpll:altpll_component" with the following parameter: File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 91
+Warning (10034): Output port "OTG_ADDR" at lab8.sv(32) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 32
+Warning (10034): Output port "DRAM_ADDR" at lab8.sv(39) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+Warning (10034): Output port "DRAM_BA" at lab8.sv(41) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 41
+Warning (10034): Output port "DRAM_DQM" at lab8.sv(42) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
+Warning (10034): Output port "OTG_CS_N" at lab8.sv(33) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 33
+Warning (10034): Output port "OTG_RD_N" at lab8.sv(34) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 34
+Warning (10034): Output port "OTG_WR_N" at lab8.sv(35) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 35
+Warning (10034): Output port "OTG_RST_N" at lab8.sv(36) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 36
+Warning (10034): Output port "DRAM_RAS_N" at lab8.sv(43) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 43
+Warning (10034): Output port "DRAM_CAS_N" at lab8.sv(44) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 44
+Warning (10034): Output port "DRAM_CKE" at lab8.sv(45) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 45
+Warning (10034): Output port "DRAM_WE_N" at lab8.sv(46) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 46
+Warning (10034): Output port "DRAM_CS_N" at lab8.sv(47) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 47
+Warning (10034): Output port "DRAM_CLK" at lab8.sv(49) has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 49
+Info (12128): Elaborating entity "keyboard" for hierarchy "keyboard:key1" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 70
+Info (12128): Elaborating entity "vga_clk" for hierarchy "vga_clk:vga_clk_instance" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 77
+Info (12128): Elaborating entity "altpll" for hierarchy "vga_clk:vga_clk_instance|altpll:altpll_component" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 91
+Info (12130): Elaborated megafunction instantiation "vga_clk:vga_clk_instance|altpll:altpll_component" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 91
+Info (12133): Instantiated megafunction "vga_clk:vga_clk_instance|altpll:altpll_component" with the following parameter: File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/vga_clk.v Line: 91
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -4481,107 +4497,107 @@ Info (12133): Instantiated megafunction "vga_clk:vga_clk_instance|altpll:altpll_
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/vga_clk_altpll.v
-    Info (12023): Found entity 1: vga_clk_altpll File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/db/vga_clk_altpll.v Line: 29
-Info (12128): Elaborating entity "vga_clk_altpll" for hierarchy "vga_clk:vga_clk_instance|altpll:altpll_component|vga_clk_altpll:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "VGA_controller" for hierarchy "VGA_controller:vga_controller_instance" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 80
-Info (12128): Elaborating entity "color_mapper" for hierarchy "color_mapper:color_instance" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 85
-Info (12128): Elaborating entity "rxycalc" for hierarchy "color_mapper:color_instance|rxycalc:r" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 40
-Info (12128): Elaborating entity "false_map" for hierarchy "color_mapper:color_instance|false_map:f0" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 45
-Info (12128): Elaborating entity "accelerated_screen_buffer" for hierarchy "color_mapper:color_instance|accelerated_screen_buffer:sb" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 47
-Info (12128): Elaborating entity "artrom" for hierarchy "color_mapper:color_instance|artrom:a0" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 49
-Info (12128): Elaborating entity "Steve" for hierarchy "Steve:steve" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 91
-Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:hex_inst_0" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 94
+    Info (12023): Found entity 1: vga_clk_altpll File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/db/vga_clk_altpll.v Line: 29
+Info (12128): Elaborating entity "vga_clk_altpll" for hierarchy "vga_clk:vga_clk_instance|altpll:altpll_component|vga_clk_altpll:auto_generated" File: /home/zhenzuo/intelFPGA_lite/18.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
+Info (12128): Elaborating entity "VGA_controller" for hierarchy "VGA_controller:vga_controller_instance" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 80
+Info (12128): Elaborating entity "color_mapper" for hierarchy "color_mapper:color_instance" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 85
+Info (12128): Elaborating entity "rxycalc" for hierarchy "color_mapper:color_instance|rxycalc:r" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 40
+Info (12128): Elaborating entity "false_map" for hierarchy "color_mapper:color_instance|false_map:f0" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 45
+Info (12128): Elaborating entity "accelerated_screen_buffer" for hierarchy "color_mapper:color_instance|accelerated_screen_buffer:sb" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 47
+Info (12128): Elaborating entity "artrom" for hierarchy "color_mapper:color_instance|artrom:a0" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 49
+Info (12128): Elaborating entity "Steve" for hierarchy "Steve:steve" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 91
+Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:hex_inst_0" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 94
 Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "OTG_DATA[0]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[1]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[2]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[3]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[4]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[5]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[6]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[7]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[8]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[9]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[10]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[11]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[12]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[13]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[14]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "OTG_DATA[15]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
-    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[16]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[17]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[18]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[19]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[20]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[21]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[22]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[23]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[24]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[25]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[26]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[27]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[28]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[29]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[30]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
-    Warning (13040): bidirectional pin "DRAM_DQ[31]" has no driver File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "OTG_DATA[0]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[1]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[2]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[3]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[4]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[5]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[6]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[7]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[8]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[9]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[10]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[11]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[12]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[13]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[14]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "OTG_DATA[15]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 31
+    Warning (13040): bidirectional pin "DRAM_DQ[0]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[1]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[2]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[3]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[4]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[5]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[6]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[7]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[8]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[9]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[10]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[11]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[12]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[13]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[14]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[15]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[16]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[17]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[18]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[19]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[20]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[21]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[22]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[23]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[24]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[25]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[26]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[27]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[28]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[29]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[30]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
+    Warning (13040): bidirectional pin "DRAM_DQ[31]" has no driver File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 40
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
-    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 26
-    Warning (13410): Pin "OTG_ADDR[0]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 32
-    Warning (13410): Pin "OTG_ADDR[1]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 32
-    Warning (13410): Pin "OTG_CS_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 33
-    Warning (13410): Pin "OTG_RD_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 34
-    Warning (13410): Pin "OTG_WR_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 35
-    Warning (13410): Pin "OTG_RST_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 36
-    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
-    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 41
-    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 41
-    Warning (13410): Pin "DRAM_DQM[0]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
-    Warning (13410): Pin "DRAM_DQM[1]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
-    Warning (13410): Pin "DRAM_DQM[2]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
-    Warning (13410): Pin "DRAM_DQM[3]" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
-    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 43
-    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 44
-    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 45
-    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 46
-    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 47
-    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 49
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 20
+    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 26
+    Warning (13410): Pin "OTG_ADDR[0]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 32
+    Warning (13410): Pin "OTG_ADDR[1]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 32
+    Warning (13410): Pin "OTG_CS_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 33
+    Warning (13410): Pin "OTG_RD_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 34
+    Warning (13410): Pin "OTG_WR_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 35
+    Warning (13410): Pin "OTG_RST_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 36
+    Warning (13410): Pin "DRAM_ADDR[0]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[1]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[2]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[3]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[4]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[5]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[6]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[7]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[8]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[9]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[10]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[11]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_ADDR[12]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 39
+    Warning (13410): Pin "DRAM_BA[0]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 41
+    Warning (13410): Pin "DRAM_BA[1]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 41
+    Warning (13410): Pin "DRAM_DQM[0]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
+    Warning (13410): Pin "DRAM_DQM[1]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
+    Warning (13410): Pin "DRAM_DQM[2]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
+    Warning (13410): Pin "DRAM_DQM[3]" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 42
+    Warning (13410): Pin "DRAM_RAS_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 43
+    Warning (13410): Pin "DRAM_CAS_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 44
+    Warning (13410): Pin "DRAM_CKE" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 45
+    Warning (13410): Pin "DRAM_WE_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 46
+    Warning (13410): Pin "DRAM_CS_N" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 47
+    Warning (13410): Pin "DRAM_CLK" is stuck at GND File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 49
 Info (286030): Timing-Driven Synthesis is running
 Warning (20013): Ignored 27 assignments for entity "DE2_115_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_global_assignment -name LL_ROOT_REGION ON -entity DE2_115_Default -section_id "Root Region" was ignored
@@ -4611,30 +4627,30 @@ Warning (20013): Ignored 27 assignments for entity "DE2_115_Default" -- entity d
     Warning (20014): Assignment for entity set_global_assignment -name ABSORB_PATHS_FROM_OUTPUTS_TO_INPUTS ON -entity DE2_115_Default -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_EXTRACT_HARD_BLOCK_NODES ON -entity DE2_115_Default -section_id Top was ignored
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE2_115_Default -section_id Top was ignored
-Info (144001): Generated suppressed messages file C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.map.smsg
+Info (144001): Generated suppressed messages file /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
-    Warning (15610): No output dependent on input pin "OTG_INT" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 37
-Info (21057): Implemented 11029 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[1]" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
+    Warning (15610): No output dependent on input pin "KEY[2]" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
+    Warning (15610): No output dependent on input pin "KEY[3]" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
+    Warning (15610): No output dependent on input pin "OTG_INT" File: /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 37
+Info (21057): Implemented 11308 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 112 output pins
     Info (21060): Implemented 48 bidirectional pins
-    Info (21061): Implemented 10860 logic cells
+    Info (21061): Implemented 11139 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 139 warnings
-    Info: Peak virtual memory: 4861 megabytes
-    Info: Processing ended: Sat Dec 11 22:24:46 2021
-    Info: Elapsed time: 00:01:52
-    Info: Total CPU time (on all processors): 00:02:08
+    Info: Peak virtual memory: 1091 megabytes
+    Info: Processing ended: Tue Dec 14 16:41:56 2021
+    Info: Elapsed time: 00:01:06
+    Info: Total CPU time (on all processors): 00:01:17
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.map.smsg.
+The suppressed messages can be found in /home/zhenzuo/Documents/ECE385-FINAL-2DMC/2DMC/lab8.map.smsg.
 
 

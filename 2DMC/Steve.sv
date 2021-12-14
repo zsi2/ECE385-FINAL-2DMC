@@ -70,7 +70,7 @@ module  Steve ( input         Clk,                // 50 MHz clock
 	 begin
 		checkxl=pixelxl;
 		checkxr=pixelxr;
-		checkyheadfoot={1'b0,yav[8:0]};
+		checkyheadfoot={1'b0,yav[9:1]};
 		checkyu=pixelyu+10'd2;
 		checkyd=pixelyd-10'd2;
 		checkyhead=pixelyu;
@@ -120,10 +120,12 @@ module  Steve ( input         Clk,                // 50 MHz clock
         begin
 				if (keycode==8'h29)// jmp
 					begin
-					
-						
+					if(top_en)
+					begin
+						pixelyu_in=pixelyu-10'd80;
+						pixelyd_in=pixelyd-10'd80;
 					end
-
+					end
 				if (keycode==8'h1c) //left
 					 begin
 					 if(left_en)
@@ -131,30 +133,14 @@ module  Steve ( input         Clk,                // 50 MHz clock
 					 		pixelxl_in=pixelxl-10'd10;
 							pixelxr_in=pixelxr-10'd10;
 					 end
-
-					 							
-
-					end
-					
-					
+				end
 				if (keycode==8'h23) //right
 				begin
 					if(right_en)
 					 begin
 					 		pixelxl_in=pixelxl+10'd10;
 							pixelxr_in=pixelxr+10'd10;
-				
-				
-							if(pixelxr>=10'd360)
-							begin
-								pixelxl_in=10'd279;
-								pixelxr_in=10'd320;
-								xin=x+6'b1;
-							end
-					 
 					 end
-
-
 				end
 				
 				if(down_en)
@@ -169,8 +155,13 @@ module  Steve ( input         Clk,                // 50 MHz clock
 					pixelyu_in=10'd159;
 					pixelyd_in=10'd240;
 					yin=y+6'b1;
-					
-					
+				end
+				
+				if(pixelyd<=10'd200)
+				begin
+					pixelyu_in=10'd159;
+					pixelyd_in=10'd240;
+					yin=y-6'b1;
 				end
 				
 				if(pixelxl<=10'd239)
@@ -178,6 +169,13 @@ module  Steve ( input         Clk,                // 50 MHz clock
 					pixelxl_in=10'd279;
 					pixelxr_in=10'd320;
 					xin=x-6'b1;
+				end
+				
+				if(pixelxr>=10'd360)
+				begin
+					pixelxl_in=10'd279;
+					pixelxr_in=10'd320;
+					xin=x+6'b1;
 				end
         end
 
