@@ -64,7 +64,7 @@ module keyboard
 	begin
 	
 		if(Reset_h)
-			Data<=7'b0;
+			Data<=8'b0;
 		else if (shifted_ps2_clk_negedge)
 		begin
 			case(bit_counter)
@@ -89,6 +89,8 @@ module keyboard
 					Data<=Data;
 			endcase
 		end
+		else if (removedata)
+			Data<=8'h00;
 		else
 			Data<=Data;
 	end
@@ -98,29 +100,46 @@ module keyboard
 	//if some keys released
 	
 	logic [7:0] detector; // interrupt detector
+	logic removedata;
 	
 	 //0 wait, 1 released 1, 2 released 2 
 	always_ff @(posedge Clk)
 	begin
+	
+	
 		if(bit_counter==4'd11)
 		begin
 			//when a pack fetched
 			if(state==2'b0)
 			begin
-				if(Data!=8'b0)
+				if(Data!=8'h0)
 					state=2'b01;
 				else
 					state=2'b0;
 			end
 			if(state==2'b01)
+			begin
+				if(Data!=8'hF0)
 				detector<=Data;
+			end
 			if(Data==8'hF0&state==2'b01)
 				state=2'b10;
 			if(Data==detector&state==2'b10)
+			//finished a key
+			begin
+				
 				state=2'b0;
+				removedata=1'b1;
+			end
+			else
+				removedata=1'b0;
 			
 		end
+		
+		
 	end
+	
+	
 			
 	always_comb
 	begin

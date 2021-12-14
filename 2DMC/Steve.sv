@@ -8,19 +8,23 @@ module  Steve ( input         Clk,                // 50 MHz clock
 					output logic [3:0] x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,x11,x12,
 					output logic [6:0] steve_relx,steve_rely,
 					output logic [9:0] pixelyd,pixelxr,
+					output logic [6:0] x,y,
 					input logic left_en,right_en,top_en,down_en
               );
     
 	 //Steve's feet
-    parameter [6:0] Steve_x = 7'd11;  // Center position on the X axis
-    parameter [6:0] Steve_y = 7'd40;  // Center position on the Y axis
-	 parameter [9:0] vx0=10'b0;
+    parameter [6:0] Steve_x = 7'd10;  // Center position on the X axis
+    parameter [6:0] Steve_y = 7'd30;  // Center position on the Y axis
+	 parameter [9:0] pixelxl0=10'd279;
+	 parameter [9:0] pixelxr0=10'd320;
+	 parameter [9:0] pixelyu0=10'd159;
+	 parameter [9:0] pixelyd0=10'd240;
 
-	 logic [6:0] x,y,xin,yin; //xy in map
+	 logic [6:0] xin,yin; //xy in map
 	 
-	 logic [9:0] pixelxl, pixelyu , vx; //consider feet
+	 logic [9:0] pixelxl, pixelyu ; //consider feet
 	 
-	 logic [9:0] pixelxl_in,pixelxr_in,pixelyu_in,pixelyd_in,vx_in; //newones
+	 logic [9:0] pixelxl_in,pixelxr_in,pixelyu_in,pixelyd_in; //newones
 	 
 
 
@@ -39,24 +43,20 @@ module  Steve ( input         Clk,                // 50 MHz clock
         begin
             x <= Steve_x;
             y <= Steve_y;
-				pixelxl<= 10'd7*10'd40-10'd1;
-				pixelxr<= 10'd7*10'd40+10'd40;
-				pixelyu<= 10'd5*10'd40-10'd41;
-				pixelyd<= 10'd5*10'd40+10'd40;
-				vx<=vx0;
+				pixelxl<= pixelxl0;
+				pixelxr<= pixelxr0;
+				pixelyu<= pixelyu0;
+				pixelyd<= pixelyd0;
+
         end
         else
+		  begin
 				x<=xin;
 				y<=yin;
 				pixelyu<=pixelyu_in;
 				pixelyd<=pixelyd_in;
-			//	pixelxl<=pixelxl;
-			//	pixelxr<=pixelxr;
-		  
-        begin
-
-
-		
+				pixelxl<=pixelxl_in;
+				pixelxr<=pixelxr_in;		
         end
     end
 	 
@@ -71,8 +71,8 @@ module  Steve ( input         Clk,                // 50 MHz clock
 		checkxl=pixelxl;
 		checkxr=pixelxr;
 		checkyheadfoot={1'b0,yav[8:0]};
-		checkyu=pixelyu-10'b1;
-		checkyd=pixelyd+10'b1;
+		checkyu=pixelyu+10'd2;
+		checkyd=pixelyd-10'd2;
 		checkyhead=pixelyu;
 		checkyfoot=pixelyd;
 	 end
@@ -118,17 +118,42 @@ module  Steve ( input         Clk,                // 50 MHz clock
 		  pixelyd_in=pixelyd;
         if (frame_clk_rising_edge)
         begin
-				if (keycode==8'h1a)// up
+				if (keycode==8'h29)// jmp
 					begin
+					
 						
 					end
 
-				if (keycode==8'h04) //left
+				if (keycode==8'h1c) //left
 					 begin
-
+					 if(left_en)
+					 begin
+					 		pixelxl_in=pixelxl-10'd10;
+							pixelxr_in=pixelxr-10'd10;
 					 end
-				if (keycode==8'h07) //right
+
+					 							
+
+					end
+					
+					
+				if (keycode==8'h23) //right
 				begin
+					if(right_en)
+					 begin
+					 		pixelxl_in=pixelxl+10'd10;
+							pixelxr_in=pixelxr+10'd10;
+				
+				
+							if(pixelxr>=10'd360)
+							begin
+								pixelxl_in=10'd279;
+								pixelxr_in=10'd320;
+								xin=x+6'b1;
+							end
+					 
+					 end
+
 
 				end
 				
@@ -138,13 +163,21 @@ module  Steve ( input         Clk,                // 50 MHz clock
 					pixelyu_in=pixelyu+10'd10;
 					pixelyd_in=pixelyd+10'd10;
 				
-				
+				end
 				if(pixelyu>=10'd199)
 				begin
 					pixelyu_in=10'd159;
 					pixelyd_in=10'd240;
 					yin=y+6'b1;
+					
+					
 				end
+				
+				if(pixelxl<=10'd239)
+				begin
+					pixelxl_in=10'd279;
+					pixelxr_in=10'd320;
+					xin=x-6'b1;
 				end
         end
 

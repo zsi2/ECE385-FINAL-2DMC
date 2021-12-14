@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab8
-Thu Dec 09 00:36:05 2021
+Sat Dec 11 22:24:46 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -24,23 +24,25 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  16. Parameter Settings for User Entity Instance: color_mapper:color_instance|artrom:a0
  17. Parameter Settings for User Entity Instance: Steve:steve
  18. altpll Parameter Settings by Entity Instance
- 19. Port Connectivity Checks: "Steve:steve|rxycalc:r12"
- 20. Port Connectivity Checks: "Steve:steve|rxycalc:r11"
- 21. Port Connectivity Checks: "Steve:steve|rxycalc:r10"
- 22. Port Connectivity Checks: "Steve:steve|rxycalc:r9"
- 23. Port Connectivity Checks: "Steve:steve|rxycalc:r8"
- 24. Port Connectivity Checks: "Steve:steve|rxycalc:r7"
- 25. Port Connectivity Checks: "Steve:steve|rxycalc:r6"
- 26. Port Connectivity Checks: "Steve:steve|rxycalc:r5"
- 27. Port Connectivity Checks: "Steve:steve|rxycalc:r4"
- 28. Port Connectivity Checks: "Steve:steve|rxycalc:r3"
- 29. Port Connectivity Checks: "Steve:steve|rxycalc:r2"
- 30. Port Connectivity Checks: "Steve:steve|rxycalc:r1"
- 31. Port Connectivity Checks: "Steve:steve"
- 32. Post-Synthesis Netlist Statistics for Top Partition
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
- 35. Analysis & Synthesis Suppressed Messages
+ 19. Port Connectivity Checks: "HexDriver:hex_inst_5"
+ 20. Port Connectivity Checks: "HexDriver:hex_inst_3"
+ 21. Port Connectivity Checks: "Steve:steve|rxycalc:r12"
+ 22. Port Connectivity Checks: "Steve:steve|rxycalc:r11"
+ 23. Port Connectivity Checks: "Steve:steve|rxycalc:r10"
+ 24. Port Connectivity Checks: "Steve:steve|rxycalc:r9"
+ 25. Port Connectivity Checks: "Steve:steve|rxycalc:r8"
+ 26. Port Connectivity Checks: "Steve:steve|rxycalc:r7"
+ 27. Port Connectivity Checks: "Steve:steve|rxycalc:r6"
+ 28. Port Connectivity Checks: "Steve:steve|rxycalc:r5"
+ 29. Port Connectivity Checks: "Steve:steve|rxycalc:r4"
+ 30. Port Connectivity Checks: "Steve:steve|rxycalc:r3"
+ 31. Port Connectivity Checks: "Steve:steve|rxycalc:r2"
+ 32. Port Connectivity Checks: "Steve:steve|rxycalc:r1"
+ 33. Port Connectivity Checks: "Steve:steve"
+ 34. Post-Synthesis Netlist Statistics for Top Partition
+ 35. Elapsed Time Per Partition
+ 36. Analysis & Synthesis Messages
+ 37. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -66,16 +68,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 09 00:36:05 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 11 22:24:46 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab8                                        ;
 ; Top-level Entity Name              ; lab8                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 6,674                                       ;
-;     Total combinational functions  ; 6,665                                       ;
-;     Dedicated logic registers      ; 114                                         ;
-; Total registers                    ; 114                                         ;
-; Total pins                         ; 140                                         ;
+; Total logic elements               ; 10,850                                      ;
+;     Total combinational functions  ; 10,841                                      ;
+;     Dedicated logic registers      ; 680                                         ;
+; Total registers                    ; 680                                         ;
+; Total pins                         ; 168                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -220,23 +222,23 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------------------------------------+
 ; Resource                                    ; Usage                                        ;
 +---------------------------------------------+----------------------------------------------+
-; Estimated Total logic elements              ; 6,674                                        ;
+; Estimated Total logic elements              ; 10,850                                       ;
 ;                                             ;                                              ;
-; Total combinational functions               ; 6665                                         ;
+; Total combinational functions               ; 10841                                        ;
 ; Logic element usage by number of LUT inputs ;                                              ;
-;     -- 4 input functions                    ; 5594                                         ;
-;     -- 3 input functions                    ; 775                                          ;
-;     -- <=2 input functions                  ; 296                                          ;
+;     -- 4 input functions                    ; 9236                                         ;
+;     -- 3 input functions                    ; 1082                                         ;
+;     -- <=2 input functions                  ; 523                                          ;
 ;                                             ;                                              ;
 ; Logic elements by mode                      ;                                              ;
-;     -- normal mode                          ; 6527                                         ;
-;     -- arithmetic mode                      ; 138                                          ;
+;     -- normal mode                          ; 10602                                        ;
+;     -- arithmetic mode                      ; 239                                          ;
 ;                                             ;                                              ;
-; Total registers                             ; 114                                          ;
-;     -- Dedicated logic registers            ; 114                                          ;
+; Total registers                             ; 680                                          ;
+;     -- Dedicated logic registers            ; 680                                          ;
 ;     -- I/O registers                        ; 0                                            ;
 ;                                             ;                                              ;
-; I/O pins                                    ; 140                                          ;
+; I/O pins                                    ; 168                                          ;
 ;                                             ;                                              ;
 ; Embedded Multiplier 9-bit elements          ; 0                                            ;
 ;                                             ;                                              ;
@@ -244,9 +246,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                            ;
 ;                                             ;                                              ;
 ; Maximum fan-out node                        ; color_mapper:color_instance|artrom:a0|Add1~0 ;
-; Maximum fan-out                             ; 1565                                         ;
-; Total fan-out                               ; 25808                                        ;
-; Average fan-out                             ; 3.63                                         ;
+; Maximum fan-out                             ; 1570                                         ;
+; Total fan-out                               ; 42975                                        ;
+; Average fan-out                             ; 3.61                                         ;
 +---------------------------------------------+----------------------------------------------+
 
 
@@ -255,18 +257,28 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                  ; Entity Name               ; Library Name ;
 +---------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------+---------------------------+--------------+
-; |lab8                                       ; 6665 (2)            ; 114 (1)                   ; 0           ; 0            ; 0       ; 0         ; 140  ; 0            ; |lab8                                                                                ; lab8                      ; work         ;
+; |lab8                                       ; 10841 (2)           ; 680 (1)                   ; 0           ; 0            ; 0       ; 0         ; 168  ; 0            ; |lab8                                                                                ; lab8                      ; work         ;
 ;    |HexDriver:hex_inst_0|                   ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_0                                                           ; HexDriver                 ; work         ;
 ;    |HexDriver:hex_inst_1|                   ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_1                                                           ; HexDriver                 ; work         ;
-;    |Steve:steve|                            ; 82 (69)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve                                                                    ; Steve                     ; work         ;
-;       |rxycalc:r10|                         ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r10                                                        ; rxycalc                   ; work         ;
+;    |HexDriver:hex_inst_2|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_2                                                           ; HexDriver                 ; work         ;
+;    |HexDriver:hex_inst_3|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_3                                                           ; HexDriver                 ; work         ;
+;    |HexDriver:hex_inst_4|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_4                                                           ; HexDriver                 ; work         ;
+;    |HexDriver:hex_inst_5|                   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|HexDriver:hex_inst_5                                                           ; HexDriver                 ; work         ;
+;    |Steve:steve|                            ; 481 (257)           ; 52 (52)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve                                                                    ; Steve                     ; work         ;
+;       |rxycalc:r10|                         ; 48 (48)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r10                                                        ; rxycalc                   ; work         ;
+;       |rxycalc:r11|                         ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r11                                                        ; rxycalc                   ; work         ;
+;       |rxycalc:r12|                         ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r12                                                        ; rxycalc                   ; work         ;
+;       |rxycalc:r1|                          ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r1                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r4|                          ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r4                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r5|                          ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r5                                                         ; rxycalc                   ; work         ;
+;       |rxycalc:r6|                          ; 27 (27)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|Steve:steve|rxycalc:r6                                                         ; rxycalc                   ; work         ;
 ;    |VGA_controller:vga_controller_instance| ; 60 (60)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|VGA_controller:vga_controller_instance                                         ; VGA_controller            ; work         ;
-;    |color_mapper:color_instance|            ; 6455 (129)          ; 36 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance                                                    ; color_mapper              ; work         ;
-;       |accelerated_screen_buffer:sb|        ; 51 (51)             ; 36 (36)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb                       ; accelerated_screen_buffer ; work         ;
-;       |artrom:a0|                           ; 5993 (5993)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|artrom:a0                                          ; artrom                    ; work         ;
-;       |false_map:f0|                        ; 153 (153)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|false_map:f0                                       ; false_map                 ; work         ;
-;       |rxycalc:r|                           ; 129 (129)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|rxycalc:r                                          ; rxycalc                   ; work         ;
-;    |keyboard:key1|                          ; 38 (38)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|keyboard:key1                                                                  ; keyboard                  ; work         ;
+;    |color_mapper:color_instance|            ; 10188 (132)         ; 576 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance                                                    ; color_mapper              ; work         ;
+;       |accelerated_screen_buffer:sb|        ; 2440 (2440)         ; 576 (576)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb                       ; accelerated_screen_buffer ; work         ;
+;       |artrom:a0|                           ; 6005 (6005)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|artrom:a0                                          ; artrom                    ; work         ;
+;       |false_map:f0|                        ; 1467 (1467)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|false_map:f0                                       ; false_map                 ; work         ;
+;       |rxycalc:r|                           ; 144 (144)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|color_mapper:color_instance|rxycalc:r                                          ; rxycalc                   ; work         ;
+;    |keyboard:key1|                          ; 53 (53)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|keyboard:key1                                                                  ; keyboard                  ; work         ;
 ;    |vga_clk:vga_clk_instance|               ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|vga_clk:vga_clk_instance                                                       ; vga_clk                   ; work         ;
 ;       |altpll:altpll_component|             ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|vga_clk:vga_clk_instance|altpll:altpll_component                               ; altpll                    ; work         ;
 ;          |vga_clk_altpll:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |lab8|vga_clk:vga_clk_instance|altpll:altpll_component|vga_clk_altpll:auto_generated ; vga_clk_altpll            ; work         ;
@@ -288,721 +300,184 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 ; Register name                                                         ; Reason for Removal                                                                ;
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-; Steve:steve|x[0,1]                                                    ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|x[2]                                                      ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|x[3]                                                      ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|x[4..6]                                                   ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|pixelxl[5..7]                                             ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|pixelxl[4]                                                ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|pixelxl[3]                                                ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|pixelxl[0..2]                                             ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|checkxr[9]                                                ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|checkxr[8]                                                ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|checkxr[7]                                                ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|checkxr[6]                                                ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|checkxr[0..5]                                             ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|pixelyu[0]                                                ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|checkyfoot[0]                                             ; Stuck at GND due to stuck port data_in                                            ;
-; Steve:steve|pixelxl[8]                                                ; Stuck at VCC due to stuck port data_in                                            ;
-; Steve:steve|pixelxl[9]                                                ; Stuck at GND due to stuck port data_in                                            ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][18] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][22] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][26] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][2]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][6]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][30] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][31] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][46] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][47] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][62] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][63] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][19] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][23] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][27] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][34] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][35] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][38] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][39] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][3]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][42] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][43] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][50] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][51] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][54] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][55] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][58] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][59] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][7]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][14] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][18] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][22] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][26] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][2]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][6]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][10] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][31] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][30] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][62] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][30] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][63] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][30] ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][31] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][47] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][63] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][15] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][19] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][23] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][27] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][34] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][35] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][38] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][39] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][3]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][42] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][43] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][46] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][47] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][50] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][51] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][54] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][55] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][58] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][59] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][7]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][30]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][30]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][30]  ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][63] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][31] ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][30]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][30]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][30]  ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][31]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][10]  ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][31]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][10]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][10]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][10]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][12] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][16] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][17] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][1]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][20] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][21] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][24] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][25] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][28] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][32] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][33] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][36] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][37] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][40] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][41] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][44] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][48] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][49] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][4]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][52] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][53] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][56] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][57] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][5]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][8]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][9]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][45] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][13] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][12] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][13] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][16] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][17] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][1]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][20] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][21] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][24] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][25] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][28] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][32] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][33] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][36] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][37] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][40] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][41] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][44] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][45] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][48] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][49] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][4]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][52] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][53] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][56] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][57] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][5]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][8]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][9]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][10]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][10]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][10]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][14]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][18]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][22]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][26]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][2]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][10]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][6]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][10]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][15]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][19]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][23]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][27]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][30]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][31]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][34]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][35]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][38]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][39]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][3]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][42]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][43]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][46]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][47]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][50]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][51]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][54]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][55]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][58]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][59]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][62]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][63]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][7]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][11]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][12]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][13]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][16]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][17]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][1]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][20]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][21]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][24]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][25]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][28]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][32]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][33]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][36]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][37]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][40]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][41]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][44]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][45]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][48]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][49]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][4]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][52]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][53]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][56]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][57]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][5]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][8]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][9]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][61]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][60]  ;
+; Steve:steve|checkyfoot[0]                                             ; Stuck at GND due to stuck port data_in                                            ;
+; Steve:steve|checkxr[0]                                                ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][11]  ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][11]  ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][11]  ; Stuck at GND due to stuck port data_in                                            ;
@@ -1011,45 +486,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][11]  ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][11]  ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][11]  ; Stuck at GND due to stuck port data_in                                            ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][30]  ; Stuck at GND due to stuck port data_in                                            ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][31]  ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][11]  ; Stuck at GND due to stuck port data_in                                            ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][30]  ; Stuck at GND due to stuck port data_in                                            ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][31]  ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][11]  ; Stuck at GND due to stuck port data_in                                            ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][30] ; Stuck at GND due to stuck port data_in                                            ;
+; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][31] ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][11] ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][15] ; Stuck at GND due to stuck port data_in                                            ;
 ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][11] ; Stuck at GND due to stuck port data_in                                            ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][60]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][61]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][60]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][61]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][0]   ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][61]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][60]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][61]  ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][0]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][61] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][60] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][61] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][0]  ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][61] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][60] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][61] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][13] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][61] ;
-; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][10] ; Merged with color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][14] ;
-; Total Number of Removed Registers = 761                               ;                                                                                   ;
+; Steve:steve|pixelxl[0]                                                ; Stuck at VCC due to stuck port data_in                                            ;
+; Steve:steve|pixelyu[0]                                                ; Stuck at VCC due to stuck port data_in                                            ;
+; Total Number of Removed Registers = 196                               ;                                                                                   ;
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                          ;
-+------------------+---------------------------+-----------------------------------------------------------------------+
-; Register name    ; Reason for Removal        ; Registers Removed due to This Register                                ;
-+------------------+---------------------------+-----------------------------------------------------------------------+
-; Steve:steve|x[0] ; Stuck at VCC              ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][30], ;
-;                  ; due to stuck port data_in ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][30], ;
-;                  ;                           ; color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][30] ;
-+------------------+---------------------------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                 ;
++------------------------+---------------------------+----------------------------------------+
+; Register name          ; Reason for Removal        ; Registers Removed due to This Register ;
++------------------------+---------------------------+----------------------------------------+
+; Steve:steve|checkxr[0] ; Stuck at GND              ; Steve:steve|pixelxl[0]                 ;
+;                        ; due to stuck port data_in ;                                        ;
++------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1057,34 +515,109 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 114   ;
-; Number of registers using Synchronous Clear  ; 12    ;
-; Number of registers using Synchronous Load   ; 18    ;
+; Total registers                              ; 680   ;
+; Number of registers using Synchronous Clear  ; 17    ;
+; Number of registers using Synchronous Load   ; 26    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 34    ;
+; Number of registers using Clock Enable       ; 57    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|VGA_controller:vga_controller_instance|h_counter[0]    ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|keyboard:key1|bit_counter[1]                           ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |lab8|VGA_controller:vga_controller_instance|v_counter_in[7] ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[3]                   ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[4]                   ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_G[5]                   ;
-; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_G[7]                   ;
-; 9:1                ; 5 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_G[2]                   ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[6]                   ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|y[1]             ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r10|y[1]                           ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|x[3]             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |lab8|Steve:steve|y[3]                                                      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|VGA_controller:vga_controller_instance|h_counter[2]                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |lab8|keyboard:key1|bit_counter[0]                                          ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][36]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][32]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][48]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][20]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][48]  ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |lab8|Steve:steve|x[3]                                                      ;
+; 5:1                ; 18 bits   ; 54 LEs        ; 18 LEs               ; 36 LEs                 ; Yes        ; |lab8|Steve:steve|checkyfoot[3]                                             ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][45]  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][48]  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][48]  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][49]  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][52]  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][32] ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][20] ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][21] ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][44]  ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][53]  ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][20]  ;
+; 32:1               ; 8 bits    ; 168 LEs       ; 16 LEs               ; 152 LEs                ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][37]  ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][40]  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][44] ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[9][1]   ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][12]  ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][20]  ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][25]  ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][48]  ;
+; 7:1                ; 18 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |lab8|Steve:steve|checkxr[6]                                                ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[8][45]  ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 48 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][17]  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][17] ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][48] ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[11][57] ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][0]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[7][17]  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][56]  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[3][1]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[1][49]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][36]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][28]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][52]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][49]  ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[5][37]  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[10][53] ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[0][61]  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[2][53]  ;
+; 10:1               ; 8 bits    ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][9]   ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 32 LEs               ; 24 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[6][29]  ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|rows[4][29]  ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux366                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux342                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux382                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux126                       ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |lab8|VGA_controller:vga_controller_instance|v_counter_in[4]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux726                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux494                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux238                       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux326                       ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|false_map:f0|Mux366                       ;
+; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux230       ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux257       ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux155       ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 48 LEs               ; 12 LEs                 ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux205       ;
+; 16:1               ; 36 bits   ; 360 LEs       ; 360 LEs              ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux81        ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[3]                                  ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 32 LEs               ; 8 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[0]                                  ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_G[5]                                  ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[7]                                  ;
+; 9:1                ; 5 bits    ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_B[2]                                  ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |lab8|color_mapper:color_instance|VGA_R[7]                                  ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|y[1]                            ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r4|y[3]                                           ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r5|y[1]                                           ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r6|y[3]                                           ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 12 LEs               ; 2 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r10|y[3]                                          ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|color_mapper:color_instance|rxycalc:r|x[3]                            ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r10|x[2]                                          ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r1|x[2]                                           ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r4|x[3]                                           ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r11|x[2]                                          ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |lab8|Steve:steve|rxycalc:r12|x[3]                                          ;
+; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux50        ;
+; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux569       ;
+; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux621       ;
+; 196:1              ; 3 bits    ; 390 LEs       ; 384 LEs              ; 6 LEs                  ; No         ; |lab8|color_mapper:color_instance|accelerated_screen_buffer:sb|Mux673       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------+
@@ -4622,9 +4155,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------+----------------------------+
 ; Parameter Name ; Value      ; Type                       ;
 +----------------+------------+----------------------------+
-; Steve_x        ; 0001011    ; Unsigned Binary            ;
-; Steve_y        ; 0101000    ; Unsigned Binary            ;
-; vx0            ; 0000000000 ; Unsigned Binary            ;
+; Steve_x        ; 0001010    ; Unsigned Binary            ;
+; Steve_y        ; 0011110    ; Unsigned Binary            ;
+; pixelxl0       ; 0100010111 ; Unsigned Binary            ;
+; pixelxr0       ; 0101000000 ; Unsigned Binary            ;
+; pixelyu0       ; 0010011111 ; Unsigned Binary            ;
+; pixelyd0       ; 0011110000 ; Unsigned Binary            ;
 +----------------+------------+----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -4644,6 +4180,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- VCO_MULTIPLY_BY        ; 0                                                ;
 ;     -- VCO_DIVIDE_BY          ; 0                                                ;
 +-------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "HexDriver:hex_inst_5" ;
++--------+-------+----------+----------------------+
+; Port   ; Type  ; Severity ; Details              ;
++--------+-------+----------+----------------------+
+; In0[3] ; Input ; Info     ; Stuck at GND         ;
++--------+-------+----------+----------------------+
+
+
++--------------------------------------------------+
+; Port Connectivity Checks: "HexDriver:hex_inst_3" ;
++--------+-------+----------+----------------------+
+; Port   ; Type  ; Severity ; Details              ;
++--------+-------+----------+----------------------+
+; In0[3] ; Input ; Info     ; Stuck at GND         ;
++--------+-------+----------+----------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------+
@@ -4783,27 +4337,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 140                         ;
-; cycloneiii_ff         ; 114                         ;
-;     ENA               ; 16                          ;
+; boundary_port         ; 168                         ;
+; cycloneiii_ff         ; 680                         ;
+;     ENA               ; 34                          ;
+;     ENA SCLR          ; 5                           ;
 ;     ENA SLD           ; 18                          ;
 ;     SCLR              ; 12                          ;
-;     plain             ; 68                          ;
+;     SLD               ; 8                           ;
+;     plain             ; 603                         ;
 ; cycloneiii_io_obuf    ; 48                          ;
-; cycloneiii_lcell_comb ; 6667                        ;
-;     arith             ; 138                         ;
-;         2 data inputs ; 96                          ;
-;         3 data inputs ; 42                          ;
-;     normal            ; 6529                        ;
+; cycloneiii_lcell_comb ; 10845                       ;
+;     arith             ; 239                         ;
+;         2 data inputs ; 156                         ;
+;         3 data inputs ; 83                          ;
+;     normal            ; 10606                       ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 20                          ;
-;         2 data inputs ; 181                         ;
-;         3 data inputs ; 733                         ;
-;         4 data inputs ; 5594                        ;
+;         1 data inputs ; 29                          ;
+;         2 data inputs ; 341                         ;
+;         3 data inputs ; 999                         ;
+;         4 data inputs ; 9236                        ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 20.40                       ;
-; Average LUT depth     ; 15.82                       ;
+; Average LUT depth     ; 14.18                       ;
 +-----------------------+-----------------------------+
 
 
@@ -4812,7 +4368,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:47     ;
+; Top            ; 00:01:31     ;
 +----------------+--------------+
 
 
@@ -4822,7 +4378,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 09 00:34:59 2021
+    Info: Processing started: Sat Dec 11 22:22:54 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -4934,9 +4490,6 @@ Info (12128): Elaborating entity "false_map" for hierarchy "color_mapper:color_i
 Info (12128): Elaborating entity "accelerated_screen_buffer" for hierarchy "color_mapper:color_instance|accelerated_screen_buffer:sb" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 47
 Info (12128): Elaborating entity "artrom" for hierarchy "color_mapper:color_instance|artrom:a0" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Color_Mapper.sv Line: 49
 Info (12128): Elaborating entity "Steve" for hierarchy "Steve:steve" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 91
-Warning (10036): Verilog HDL or VHDL warning at Steve.sv(21): object "vx" assigned a value but never read File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Steve.sv Line: 21
-Warning (10036): Verilog HDL or VHDL warning at Steve.sv(23): object "pixelxl_in" assigned a value but never read File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Steve.sv Line: 23
-Warning (10036): Verilog HDL or VHDL warning at Steve.sv(23): object "pixelxr_in" assigned a value but never read File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/Steve.sv Line: 23
 Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:hex_inst_0" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 94
 Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13039): The following bidirectional pins have no drivers
@@ -5066,17 +4619,17 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 18
     Warning (15610): No output dependent on input pin "OTG_INT" File: C:/Users/sizhe/Desktop/ECE385-FINAL-2DMC/2DMC/lab8.sv Line: 37
-Info (21057): Implemented 6816 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 11029 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 84 output pins
+    Info (21059): Implemented 112 output pins
     Info (21060): Implemented 48 bidirectional pins
-    Info (21061): Implemented 6675 logic cells
+    Info (21061): Implemented 10860 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 142 warnings
-    Info: Peak virtual memory: 4886 megabytes
-    Info: Processing ended: Thu Dec 09 00:36:05 2021
-    Info: Elapsed time: 00:01:06
-    Info: Total CPU time (on all processors): 00:01:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 139 warnings
+    Info: Peak virtual memory: 4861 megabytes
+    Info: Processing ended: Sat Dec 11 22:24:46 2021
+    Info: Elapsed time: 00:01:52
+    Info: Total CPU time (on all processors): 00:02:08
 
 
 +------------------------------------------+
