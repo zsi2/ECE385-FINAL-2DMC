@@ -1,0 +1,7 @@
+23:30:28 **** Incremental Build of configuration Nios II for project usb_mouse_bsp ****
+make all 
+makefile:551: Warning: SOPC File ../../final_project_soc.sopcinfo could not be found.
+[BSP build complete]
+
+23:30:31 Build Finished (took 2s.932ms)
+

@@ -18,7 +18,7 @@ module  color_mapper (
                        input Clk,                                      //   or background (computed in ball.sv)
 							  input        [6:0] corner_x,corner_y,
 							  input        [6:0] steve_relx,steve_rely,
-                       input        [9:0] DrawX, DrawY,       // Current pixel coordinates
+                       input        [9:0] DrawX, DrawY, MouseX, MouseY,      // Current pixel coordinates
                        output logic [7:0] VGA_R, VGA_G, VGA_B, // VGA RGB output
 							  output logic left_en,right_en,top_en,down_en,
 							  input logic is_steve,
@@ -27,6 +27,10 @@ module  color_mapper (
     
     logic [7:0] Red, Green, Blue;
     
+	 int DistX,DistY,size;
+	 assign DistX=DrawX-MouseX;
+	 assign DistY=DrawY-MouseY;
+	 assign size=2;
     // Output colors to VGA
     assign VGA_R = Red;
     assign VGA_G = Green;
@@ -52,37 +56,46 @@ module  color_mapper (
     begin
         if (DrawX<640&DrawY<480) 
         begin
-				if(is_steve)
-				begin
-					if(steve_rgb==24'hffffff)
+			if((DistX*DistX)+(DistY*DistY)<=(size*size))
+			begin
+				Red=8'hff;
+				Green=8'h00;
+				Blue=8'h00;
+			end
+			else
+			begin
+					if(is_steve)
 					begin
-						Red = 8'hd2; 
-						Green = 8'he6;
-						Blue = 8'hff;
+						if(steve_rgb==24'hffffff)
+						begin
+							Red = 8'hd2; 
+							Green = 8'he6;
+							Blue = 8'hff;
+						end
+						else
+						begin
+							Red = steve_rgb[23:16];
+							Green =steve_rgb[15:8];
+							Blue = steve_rgb[7:0];
+						end
 					end
+					
 					else
 					begin
-						Red = steve_rgb[23:16];
-						Green =steve_rgb[15:8];
-						Blue = steve_rgb[7:0];
+						if(id!=4'b0)
+						begin
+							Red = rgb[23:16];
+							Green =rgb[15:8];
+							Blue = rgb[7:0];
+						end
+						else
+						begin
+							Red = 8'hd2; 
+							Green = 8'he6;
+							Blue = 8'hff;
+						end
 					end
-				end
-				
-				else
-				begin
-					if(id!=4'b0)
-					begin
-						Red = rgb[23:16];
-						Green =rgb[15:8];
-						Blue = rgb[7:0];
-					end
-					else
-					begin
-						Red = 8'hd2; 
-						Green = 8'he6;
-						Blue = 8'hff;
-					end
-				end
+		  end
         end
         else 
         begin

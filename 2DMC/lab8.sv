@@ -56,20 +56,71 @@ module lab8( input               CLOCK_50,
         Reset_h <= ~(KEY[0]);        // The push buttons are active low
     end
     
-    logic [1:0] hpi_addr;
+/*    logic [1:0] hpi_addr;
     logic [15:0] hpi_data_in, hpi_data_out;
-    logic hpi_r, hpi_w, hpi_cs, hpi_reset;
+    logic hpi_r, hpi_w, hpi_cs, hpi_reset;*/
 	 
 	 logic is_ball;
-	 logic [9:0] DrawX,DrawY;
+	 logic [9:0] DrawX,DrawY,MouseX,MouseY;
 	 
 	 logic [1:0]press,state;
     
 	 assign press=state;
-	
+	 assign MouseX=mouse_x[9:0];
+	 assign MouseY=mouse_y[9:0];
 	 keyboard key1 (.*);
 
-     
+	 logic [7:0] mouse_click;
+	 logic [15:0] mouse_x,mouse_y;
+	
+
+	lab8_soc u0 (
+		.clk_clk                (Clk),                //             clk.clk
+		.cy7c67200_DATA     (OTG_DATA),     //   cy7c67200.DATA
+		.cy7c67200_ADDR     (OTG_ADDR),     //            .ADDR
+		.cy7c67200_RD_N     (OTG_RD_N),     //            .RD_N
+		.cy7c67200_WR_N     (OTG_WR_N),     //            .WR_N
+		.cy7c67200_CS_N     (OTG_CS_N),     //            .CS_N
+		.cy7c67200_RST_N    (OTG_RST_N),    //            .RST_N
+		.cy7c67200_INT      (OTG_INT),      //            .INT
+		.mouse_click_export (mouse_click), // mouse_click.export
+		.mouse_x_export     (mouse_x),     //     mouse_x.export
+		.mouse_y_export     (mouse_y),     //     mouse_y.export
+
+		.reset_reset_n          (1'b1),          //           reset.reset_n
+		.sdram_clk_clk          (DRAM_CLK),          //       sdram_clk.clk
+		.sdram_wire_addr        (DRAM_ADDR),        //      sdram_wire.addr
+		.sdram_wire_ba          (DRAM_BA),          //                .ba
+		.sdram_wire_cas_n       (DRAM_CAS_N),       //                .cas_n
+		.sdram_wire_cke         (DRAM_CKE),         //                .cke
+		.sdram_wire_cs_n        (DRAM_CS_N),        //                .cs_n
+		.sdram_wire_dq          (DRAM_DQ),          //                .dq
+		.sdram_wire_dqm         (DRAM_DQM),         //                .dqm
+		.sdram_wire_ras_n       (DRAM_RAS_N),       //                .ras_n
+		.sdram_wire_we_n        (DRAM_WE_N),        //                .we_n
+
+	);
+	
+	
+/*    hpi_io_intf hpi_io_inst(
+                            .Clk(Clk),
+                            .Reset(Reset_h),
+                            // signals connected to NIOS II
+                            .from_sw_address(hpi_addr),
+                            .from_sw_data_in(hpi_data_in),
+                            .from_sw_data_out(hpi_data_out),
+                            .from_sw_r(hpi_r),
+                            .from_sw_w(hpi_w),
+                            .from_sw_cs(hpi_cs),
+                            .from_sw_reset(hpi_reset),
+                            // signals connected to EZ-OTG chip
+                            .OTG_DATA(OTG_DATA),    
+                            .OTG_ADDR(OTG_ADDR),    
+                            .OTG_RD_N(OTG_RD_N),    
+                            .OTG_WR_N(OTG_WR_N),    
+                            .OTG_CS_N(OTG_CS_N),
+                            .OTG_RST_N(OTG_RST_N)
+    );    */
 
     
     // Use PLL to generate the 25MHZ VGA_CLK.
@@ -97,7 +148,7 @@ module lab8( input               CLOCK_50,
 	 HexDriver hex_inst_3 ({1'b0,x[6:4]}, HEX3);
 	 HexDriver hex_inst_4 (y[3:0], HEX4);
 	 HexDriver hex_inst_5 ({1'b0,y[6:4]}, HEX5);
-	 assign LEDR=press;
+	 assign LEDR=mouse_click;
 
     
     /**************************************************************************************

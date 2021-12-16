@@ -481,8 +481,8 @@ wire             wr_rfifo;
         end
       else 
         begin
-          fifo_AE <= {fifo_FF,wfifo_used} <= 5;
-          fifo_AF <= (7'h40 - {rfifo_full,rfifo_used}) <= 5;
+          fifo_AE <= {fifo_FF,wfifo_used} <= 8;
+          fifo_AF <= (7'h40 - {rfifo_full,rfifo_used}) <= 8;
           fifo_wr <= 1'b0;
           read_0 <= 1'b0;
           av_waitrequest <= ~(av_chipselect & (~av_write_n | ~av_read_n) & av_waitrequest);

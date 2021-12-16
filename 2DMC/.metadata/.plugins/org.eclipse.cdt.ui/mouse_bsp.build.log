@@ -1,0 +1,6 @@
+00:45:47 **** Incremental Build of configuration Nios II for project MOUSE_bsp ****
+make all 
+[BSP build complete]
+
+00:45:50 Build Finished (took 3s.128ms)
+
