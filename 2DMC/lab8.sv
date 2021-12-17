@@ -34,7 +34,7 @@ module lab8( input               CLOCK_50,
                                  OTG_RD_N,     //CY7C67200 Write
                                  OTG_WR_N,     //CY7C67200 Read
                                  OTG_RST_N,    //CY7C67200 Reset
-             input               OTG_INT,      //CY7C67200 Interrupt
+             input     [1:0]          OTG_INT,      //CY7C67200 Interrupt
              // SDRAM Interface for Nios II Software
              output logic [12:0] DRAM_ADDR,    //SDRAM Address 13 Bits
              inout  wire  [31:0] DRAM_DQ,      //SDRAM Data 32 Bits
@@ -82,7 +82,7 @@ module lab8( input               CLOCK_50,
 		.cy7c67200_WR_N     (OTG_WR_N),     //            .WR_N
 		.cy7c67200_CS_N     (OTG_CS_N),     //            .CS_N
 		.cy7c67200_RST_N    (OTG_RST_N),    //            .RST_N
-		.cy7c67200_INT      (OTG_INT),      //            .INT
+		.cy7c67200_INT      (OTG_INT[0]),      //            .INT
 		.mouse_click_export (mouse_click), // mouse_click.export
 		.mouse_x_export     (mouse_x),     //     mouse_x.export
 		.mouse_y_export     (mouse_y),     //     mouse_y.export

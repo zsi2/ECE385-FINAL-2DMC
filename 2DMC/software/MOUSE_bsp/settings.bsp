@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>2021-12-16 23:27:17</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1639668437965</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>2021-12-17 16:04:03</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1639728243795</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\sizhe\Desktop\385fp\ECE385-FINAL-2DMC\2DMC\software\MOUSE_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\lab8_soc.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_gen2_0</Cpu>

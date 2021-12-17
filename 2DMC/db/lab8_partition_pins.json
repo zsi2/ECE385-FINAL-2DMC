@@ -636,7 +636,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "OTG_INT",
+					"name" : "OTG_INT[0]",
 					"strict" : false
 				},
 				{

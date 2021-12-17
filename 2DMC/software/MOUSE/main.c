@@ -189,7 +189,8 @@ int main(void)
     static alt_u16 ctl_reg = 0;
     static alt_u16 no_device = 0;
     alt_u16 fs_device = 0;
-    signed char button_value;
+  //  unsigned char button_value;
+    alt_u16 button_value;
     int px = 320;
     int py = 240;
     signed char dx = 0;
@@ -1656,7 +1657,7 @@ USB_HOT_PLUG:
                 read = (signed short) IORD(CY7C67200_BASE, HPI_DATA);
                 //printf("the read from 0x051e is: 0x%04x\n", read);
                 button_value = (signed char)((read / 16));
-                //printf("the button_value for dy (at 0x051e) is: 0x%02x\n", button_value);
+                printf("the button_value for dy (at 0x051e) is: 0x%02x\n", button_value);
 
                 /*if (button_value & 0xff)
                 {
@@ -1789,8 +1790,11 @@ USB_HOT_PLUG:
         dy_prev2 = dy_prev1;
         dy_prev1 = dy;
 
-        px = px + dx;
-        py = py + dy;
+        if(dy>=8){
+        	dy=dy-16;
+        }
+        px = px + dx/2;
+        py = py + 6*dy;
 
         px = maxmin(px, 639, 0);
         py = maxmin(py, 479, 0);

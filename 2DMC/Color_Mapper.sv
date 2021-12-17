@@ -15,7 +15,7 @@
 
 // color_mapper: Decide which color to be output to VGA for each pixel.
 module  color_mapper ( 
-                       input Clk,                                      //   or background (computed in ball.sv)
+                       input Clk, VGA_VS,                                     //   or background (computed in ball.sv)
 							  input        [6:0] corner_x,corner_y,
 							  input        [6:0] steve_relx,steve_rely,
                        input        [9:0] DrawX, DrawY, MouseX, MouseY,      // Current pixel coordinates
@@ -26,10 +26,15 @@ module  color_mapper (
                      );
     
     logic [7:0] Red, Green, Blue;
-    
+    logic [9:0] mousex,mousey;
+	 always_ff @(posedge VGA_VS)
+	 begin
+		mousex<=MouseX;
+		mousey<=MouseY;
+	 end
 	 int DistX,DistY,size;
-	 assign DistX=DrawX-MouseX;
-	 assign DistY=DrawY-MouseY;
+	 assign DistX=DrawX-mousex;
+	 assign DistY=DrawY-mousey;
 	 assign size=2;
     // Output colors to VGA
     assign VGA_R = Red;
