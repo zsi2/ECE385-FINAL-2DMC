@@ -63,7 +63,7 @@ module lab8( input               CLOCK_50,
 	 logic is_ball;
 	 logic [9:0] DrawX,DrawY,MouseX,MouseY;
 	 
-	 logic [1:0]press,state;
+	 logic [1:0]press;
     
 	 assign press=state;
 	 assign MouseX=mouse_x[9:0];
@@ -102,25 +102,6 @@ module lab8( input               CLOCK_50,
 	);
 	
 	
-/*    hpi_io_intf hpi_io_inst(
-                            .Clk(Clk),
-                            .Reset(Reset_h),
-                            // signals connected to NIOS II
-                            .from_sw_address(hpi_addr),
-                            .from_sw_data_in(hpi_data_in),
-                            .from_sw_data_out(hpi_data_out),
-                            .from_sw_r(hpi_r),
-                            .from_sw_w(hpi_w),
-                            .from_sw_cs(hpi_cs),
-                            .from_sw_reset(hpi_reset),
-                            // signals connected to EZ-OTG chip
-                            .OTG_DATA(OTG_DATA),    
-                            .OTG_ADDR(OTG_ADDR),    
-                            .OTG_RD_N(OTG_RD_N),    
-                            .OTG_WR_N(OTG_WR_N),    
-                            .OTG_CS_N(OTG_CS_N),
-                            .OTG_RST_N(OTG_RST_N)
-    );    */
 
     
     // Use PLL to generate the 25MHZ VGA_CLK.
@@ -135,12 +116,15 @@ module lab8( input               CLOCK_50,
     
     color_mapper color_instance(.*);
 	 
-	 logic [6:0] corner_x,corner_y;
+	 logic [9:0] corner_x,corner_y;
 	 logic is_steve,left_en,right_en,top_en,down_en;
 	 logic [3:0] x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y11,y12,x11,x12;
-	 logic [6:0] steve_relx,steve_rely,x,y;
+	 logic [6:0] steve_relx,steve_rely;
+	 logic [9:0] x,y;
+	 logic [19:0] hearts; //heart
 	 Steve steve (.*,.Reset(Reset_h),.frame_clk(VGA_VS));
     logic [9:0] pixelyd,pixelxr;
+
     // Display keycode on hex display
     HexDriver hex_inst_0 (keycode[3:0], HEX0);
     HexDriver hex_inst_1 (keycode[7:4], HEX1);
@@ -150,6 +134,58 @@ module lab8( input               CLOCK_50,
 	 HexDriver hex_inst_5 ({1'b0,y[6:4]}, HEX5);
 	 assign LEDR=mouse_click;
 
+	 //main FSM
+	 
+	 logic [3:0] push_id;
+	 logic [1:0] operation;
+	 logic [9:0] changex,changey;
+	 logic [3:0] mouse_relx,mouse_rely;
+	 rxycalc rmouse(.DrawX(MouseX),.DrawY(MouseY),.x(mouse_relx),.y(mouse_rely),.relx(),.rely());
+	 
+	 assign changex=corner_x+mouse_relx;
+	 assign changey=corner_y+mouse_rely;
+	 
+	 
+	 
+	 
+	 logic [3:0] state;
+	 
+	 
+	 
+	 parameter start_menu=4'd0;
+	 parameter main_game=4'd1;
+	 parameter backpack=4'd2;
+	 parameter craft=4'd3;
+	 parameter furnace=4'd4;
+	 parameter pause=4'd5;
+	 always_ff @(posedge Clk)
+	 begin
+	 if(Reset_h)
+		state<=start_menu;
+	 case(state)
+	 start_menu:
+	 begin
+		if((mouse_click==8'b1)&&(MouseX>119)&&(MouseX<519)&&(MouseY>211)&&(MouseY<251))
+			state<=main_game;
+	 
+	 end
+	 main_game:
+	 begin
+		if(mouse_click==8'b1)
+		begin
+			operation<=2'b01;
+		end
+		else
+			operation<=2'b00;
+		if(keycode==2'h24)
+			state<=backpack;
+	 end
+	 default:
+		operation=2'b00;
+	 endcase
+	 end
+	 
+	 
     
     /**************************************************************************************
         ATTENTION! Please answer the following quesiton in your lab report! Points will be allocated for the answers!

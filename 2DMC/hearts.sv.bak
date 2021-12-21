@@ -1,0 +1,19 @@
+module hearts
+(
+
+	input logic [9:0] DrawX,DrawY,
+	
+	input logic [19:0] hearts,
+	
+	output [23:0] heart_rgb
+	
+);
+
+parameter bit [1:0] full_heart [399:0]='{};
+
+parameter bit [1:0] half_heart [399:0]='{};
+
+parameter bit [1:0] no_heart [399:0]='{};
+
+
+endmodule

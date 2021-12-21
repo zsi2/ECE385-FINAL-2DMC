@@ -9,15 +9,17 @@ module keyboard
 	input logic Clk,PS2_CLK,PS2_DAT,Reset_h, //RESET, CLK,DAT
 	
 	
-	output logic [7:0] keycode,
+	output logic [7:0] keycode
 	
-	output logic [1:0] state
+
 	
 );
 
 	logic ps2_clk_negedge; // Detect the negative edge of PS/2 clock.
 	
 	logic [3:0] ps2_clk_buffer; //Buffer for detecting edge.
+	
+	logic [1:0] state;
 	
 	always_ff @(posedge Clk)
 	begin
