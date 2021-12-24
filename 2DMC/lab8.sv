@@ -177,8 +177,6 @@ module lab8( input               CLOCK_50,
 		end
 		else
 			operation<=2'b00;
-		if(keycode==2'h24)
-			state<=backpack;
 	 end
 	 default:
 		operation=2'b00;

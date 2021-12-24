@@ -14,8 +14,8 @@ module  Steve ( input         Clk,                // 50 MHz clock
               );
     
 	 //Steve's feet
-    parameter [9:0] Steve_x = 9'd10;  // Center position on the X axis
-    parameter [9:0] Steve_y = 9'd30;  // Center position on the Y axis
+    parameter [9:0] Steve_x = 9'd30;  // Center position on the X axis
+    parameter [9:0] Steve_y = 9'd10;  // Center position on the Y axis
 	 parameter [9:0] pixelxl0=10'd279;
 	 parameter [9:0] pixelxr0=10'd320;
 	 parameter [9:0] pixelyu0=10'd159;
@@ -163,10 +163,10 @@ module  Steve ( input         Clk,                // 50 MHz clock
 	 rxycalc r6(.DrawX(checkxr),.DrawY(checkyheadfoot),.x(x6),.y(y6)); //4-6 right
 	 rxycalc r7(.DrawX(checkxl+10'd1),.DrawY(checkyhead),.x(x7),.y(y7));
 	 rxycalc r8(.DrawX(checkxr-10'd1),.DrawY(checkyhead),.x(x8),.y(y8));   //7-9 head
-	 rxycalc r9(.DrawX({1'b0,xav[8:0]}),.DrawY(checkyhead),.x(x9),.y(y9));
+	 rxycalc r9(.DrawX({1'b0,xav[9:1]}),.DrawY(checkyhead),.x(x9),.y(y9));
 	 rxycalc r10(.DrawX(checkxl+10'd1),.DrawY(checkyfoot),.x(x10),.y(y10)); //10-12 foot
 	 rxycalc r11(.DrawX(checkxr-10'd1),.DrawY(checkyfoot),.x(x11),.y(y11)); 
-	 rxycalc r12(.DrawX({1'b0,xav[8:0]}),.DrawY(checkyfoot),.x(x12),.y(y12)); 
+	 rxycalc r12(.DrawX({1'b0,xav[9:1]}),.DrawY(checkyfoot),.x(x12),.y(y12)); 
 	 //generate xin,yin
 	 logic [2:0] y_counter; //fall
     //////// Do not modify the always_ff blocks. ////////
@@ -276,8 +276,8 @@ module  Steve ( input         Clk,                // 50 MHz clock
 	 
 	 //assign
 	 
-	 assign corner_x=x-6'b000111;
-	 assign corner_y=y-6'b000101;
+	 assign corner_x=x-10'b000111;
+	 assign corner_y=y-10'b000101;
 	 
 
 endmodule

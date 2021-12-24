@@ -55,14 +55,21 @@ module  color_mapper (
 
 	 rxycalc r (.*);
 	 
+	 //ohchip mem
+	 
+	 logic mem_clk;
+	 
+	 memclk clkm (.inclk0(Clk),.c0(mem_clk));
+	 
+	 
 	 logic [3:0] id,pointing_id;
 	 logic [63:0] row_0,row_1,row_2,row_3,row_4,row_5,row_6,row_7,row_8,row_9,row_10,row_11;
 	 
-	 false_map f0(.*);
+	 false_map f0(.*,.Clk(Clk));
 	 
 	 accelerated_screen_buffer sb (.*);
 	 
-	 artrom a0 (.id(id),.relx(relx),.rely(rely),.rgb(rgb),.steve_relx(steve_relx),.steve_rely(steve_rely),.steve_rgb(steve_rgb));
+	 artrom a0 (.id(id),.relx(relx),.rely(rely),.rgb(rgb),.steve_relx(steve_relx),.steve_rely(steve_rely),.steve_rgb(steve_rgb),.Clk(mem_clk));
 	 
 	 parameter start_menu=4'd0;
 	 parameter main_game=4'd1;
@@ -104,7 +111,7 @@ module  color_mapper (
 			begin
 					if(is_steve)
 					begin
-						if(steve_rgb==24'hffffff)
+						if(steve_rgb==24'h00ffff)
 						begin
 							Red = 8'hd2; 
 							Green = 8'he6;
