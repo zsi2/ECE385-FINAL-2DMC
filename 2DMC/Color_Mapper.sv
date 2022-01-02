@@ -28,7 +28,10 @@ module  color_mapper (
 							  input logic [3:0] push_id,
 							  input logic [9:0] changex,changey,
 							  input logic [3:0] mouse_relx,mouse_rely,
-							  input logic [19:0] hearts
+							  input logic [19:0] hearts,
+							  input logic [23:0] back_rgb,
+							  output logic [4:0] hand
+
 							  
                      );
     
@@ -86,6 +89,15 @@ module  color_mapper (
 	 
 	 logic is_heart;
 	 logic[23:0] heart_rgb;
+	 
+	 //bp
+	 
+	 logic [23:0] bp_rgb,handon_rgb;
+	 logic [1:0] op;
+	 logic is_bp,is_handon;
+	 
+	 backpack bp(.*);
+	 
     always_comb
     begin
          if (DrawX<640&DrawY<480) 
@@ -113,9 +125,9 @@ module  color_mapper (
 					begin
 						if(steve_rgb==24'h00ffff)
 						begin
-							Red = 8'hd2; 
-							Green = 8'he6;
-							Blue = 8'hff;
+							Red=back_rgb[23:16];
+							Green=back_rgb[15:8];
+							Blue=back_rgb[7:0];
 						end
 						else
 						begin
@@ -133,6 +145,13 @@ module  color_mapper (
 							Green=heart_rgb[15:8];
 							Blue =heart_rgb[7:0];	
 						end
+						else if (is_handon)
+						begin
+							Red =handon_rgb[23:16];
+							Green=handon_rgb[15:8];
+							Blue =handon_rgb[7:0];						
+						
+						end
 						else
 						begin
 							if(id!=4'b0)
@@ -143,9 +162,9 @@ module  color_mapper (
 							end
 							else
 							begin
-								Red = 8'hd2; 
-								Green = 8'he6;
-								Blue = 8'hff;
+							Red=back_rgb[23:16];
+							Green=back_rgb[15:8];
+							Blue=back_rgb[7:0];
 							end
 						end
 					end
@@ -155,11 +174,51 @@ module  color_mapper (
 					
 			end
 			
+			backpack:
+			begin
+				/*			Red=back_rgb[23:16];
+							Green=back_rgb[15:8];
+							Blue=back_rgb[7:0];*/
+				if((DrawX>79)&&(DrawX<559))
+				begin
+					if(is_bp)
+					begin
+//						Red=back_rgb[23:16];
+//							Green=back_rgb[15:8];
+//							Blue=back_rgb[7:0];
+						Red=bp_rgb[23:16];
+						Green=bp_rgb[15:8];
+						Blue=bp_rgb[7:0];
+					end
+					else if (is_handon)
+					begin
+						Red =handon_rgb[23:16];
+						Green=handon_rgb[15:8];
+						Blue =handon_rgb[7:0];						
+					
+					end
+					else
+					begin
+						Red=8'hc6;
+						Green=8'hc6;
+						Blue=8'hc6;
+					end
+				
+				end
+				else
+				begin
+							Red=back_rgb[23:16];
+							Green=back_rgb[15:8];
+							Blue=back_rgb[7:0];				
+				end
+				
+			end
+			
 			default:
 			begin
-							Red = 8'hd2; 
-							Green = 8'he6;
-							Blue = 8'hff;
+							Red=back_rgb[23:16];
+							Green=back_rgb[15:8];
+							Blue=back_rgb[7:0];
 			end
 
 		 endcase
@@ -167,9 +226,9 @@ module  color_mapper (
 	 end
 	 else
 	 begin
-								Red = 8'hd2; 
-							Green = 8'he6;
-							Blue = 8'hff;
+							Red=back_rgb[23:16];
+							Green=back_rgb[15:8];
+							Blue=back_rgb[7:0];
 	 end
     end 
     

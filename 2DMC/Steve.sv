@@ -11,6 +11,7 @@ module  Steve ( input         Clk,                // 50 MHz clock
 					output logic [9:0] x,y,
 					output logic [19:0] hearts,
 					input logic left_en,right_en,top_en,down_en
+					//input logic [23:0] back_rgb
               );
     
 	 //Steve's feet
@@ -212,6 +213,23 @@ module  Steve ( input         Clk,                // 50 MHz clock
 					 end
 				end
 				
+				if (keycode==8'h1a)
+				begin
+					pixelxl_in=pixelxl-10'd40;
+					pixelxr_in=pixelxr-10'd40;
+					pixelyu_in=pixelyu-10'd40;
+					pixelyd_in=pixelyd-10'd40;
+				end
+				
+				if (keycode==8'h21)
+				begin
+					pixelxl_in=pixelxl+10'd40;
+					pixelxr_in=pixelxr+10'd40;
+					pixelyu_in=pixelyu-10'd40;
+					pixelyd_in=pixelyd-10'd40;
+				end
+				
+				
 				if(down_en)
 				begin
 					
@@ -264,7 +282,7 @@ module  Steve ( input         Clk,                // 50 MHz clock
 	 
 	 always_comb
 	 begin
-		if((DrawX>pixelxl)&&(DrawX<pixelxr)&&(DrawY>pixelyu)&&(DrawY<pixelyd)==1'b1)
+		if((DrawX>=pixelxl)&&(DrawX<=pixelxr)&&(DrawY>=pixelyu)&&(DrawY<=pixelyd)==1'b1)
 		begin
 			is_steve=1'b1;			
 		end

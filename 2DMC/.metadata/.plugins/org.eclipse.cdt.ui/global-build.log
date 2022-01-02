@@ -3291,3 +3291,189 @@ Info:             130980 KBytes free for stack + heap.
 Info: Creating MOUSE.objdump
 nios2-elf-objdump --disassemble --syms --all-header --source MOUSE.elf >MOUSE.objdump
 [MOUSE build complete]
+19:43:53 **** Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+19:45:36 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+22:51:23 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+22:51:52 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+17:40:43 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+17:47:18 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+20:27:26 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+21:05:05 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+12:33:39 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+12:34:21 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+12:35:03 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+12:55:28 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+14:03:46 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+14:20:06 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+14:32:41 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+14:33:14 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+16:25:04 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+20:05:34 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+21:44:49 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+21:45:29 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+10:29:47 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+13:40:29 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+13:41:10 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+14:25:53 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+14:35:14 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+16:35:05 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+17:17:39 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+17:54:31 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+17:55:09 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+18:47:48 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]
+20:06:21 **** Incremental Build of configuration Nios II for project usb_mouse2 ****
+make all 
+Info: Building ../MOUSE_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../MOUSE_bsp/
+[BSP build complete]
+[MOUSE build complete]

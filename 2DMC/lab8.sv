@@ -126,6 +126,8 @@ module lab8( input               CLOCK_50,
     logic [9:0] pixelyd,pixelxr;
 
     // Display keycode on hex display
+	 
+	 logic [4:0] hand;
     HexDriver hex_inst_0 (keycode[3:0], HEX0);
     HexDriver hex_inst_1 (keycode[7:4], HEX1);
 	 HexDriver hex_inst_2 (x[3:0], HEX2);
@@ -133,6 +135,46 @@ module lab8( input               CLOCK_50,
 	 HexDriver hex_inst_4 (y[3:0], HEX4);
 	 HexDriver hex_inst_5 ({1'b0,y[6:4]}, HEX5);
 	 assign LEDR=mouse_click;
+	 
+	 
+	 //timer and backrgb
+	 
+	 
+	 logic [31:0] time_in_sec;
+	 
+	 logic [23:0] back_rgb;
+	 
+	 time_generator t0 (.*);
+	 
+//	 parameter backr=8'hd2;
+//	 parameter backg=8'he6;
+//	 parameter backb=8'hff;
+	 
+	 logic [8:0] backrnow,backgnow,backbnow;
+	 
+	 always_comb
+	 begin
+		if(time_in_sec<600)
+		begin
+			backrnow=210-7*(time_in_sec/60);
+			backgnow=230-6*(time_in_sec/60);
+			backbnow=250;
+		end
+		else
+		begin
+			backrnow=230-9*(time_in_sec/60);
+			backgnow=280-11*(time_in_sec/60);
+			backbnow=400-15*(time_in_sec/60);
+		
+		end
+	end
+	 
+
+	 
+	 
+	 assign back_rgb={backrnow[7:0],backgnow[7:0],backbnow[7:0]};
+	 
+	 
 
 	 //main FSM
 	 
@@ -171,18 +213,50 @@ module lab8( input               CLOCK_50,
 	 end
 	 main_game:
 	 begin
-		if(mouse_click==8'b1)
+		operation=mouse_click[1:0]; //1 left click, 2 right ,0 none
+		if(keycode==8'h24)
 		begin
-			operation<=2'b01;
+			state<=backpack;
 		end
-		else
-			operation<=2'b00;
+		
+		//decide push id
+		if(keycode==8'h45)
+			push_id<=4'd2;
+		if(keycode==8'h16)
+			push_id<=4'd3;
+		if(keycode==8'h1e)
+			push_id<=4'd4;
+		if(keycode==8'h26)
+			push_id<=4'd6;
+		if(keycode==8'h25)
+			push_id<=4'd7;
+		if(keycode==8'h2e)
+			push_id<=4'd9;
+		if(keycode==8'h36)
+			push_id<=4'd12;
+		if(keycode==8'h3d)
+			push_id<=4'd13;
+		if(keycode==8'h3e)
+			push_id<=4'd14;
+		if(keycode==8'h46)
+			push_id<=4'd15;
+		
+		
+	 end
+	 backpack:
+	 begin
+		if(keycode==8'h76)
+		begin
+			state<=main_game;
+		end
 	 end
 	 default:
 		operation=2'b00;
 	 endcase
 	 end
 	 
+
+
 	 
     
     /**************************************************************************************

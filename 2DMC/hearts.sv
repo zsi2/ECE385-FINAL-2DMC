@@ -118,11 +118,11 @@ begin
 	begin
 		case(hearts[20-2*whichheart+1-:2])
 			2'b10: //full
-			color_id=full_heart[20*(19-rely)+relx_in_a_heart];
+			color_id=full_heart[20*(rely)+relx_in_a_heart];
 			2'b01: //half
-			color_id=half_heart[20*(19-rely)+relx_in_a_heart];
+			color_id=half_heart[20*(rely)+relx_in_a_heart];
 			2'b00:
-			color_id=no_heart[20*(19-rely)+relx_in_a_heart];
+			color_id=no_heart[20*(rely)+relx_in_a_heart];
 			default:
 			color_id=0;
 		endcase

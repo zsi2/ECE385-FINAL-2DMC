@@ -13,7 +13,7 @@ logic [1:0] button_rom [15999:0];
 
 initial begin
 	$readmemb("resources/ui/2dmc.txt",mc_rom);
-	$readmemb("resources/ui/Single.txt",button_rom);
+	$readmemb("resources/ui/Menu.txt",button_rom);
 
 end
 

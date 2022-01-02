@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY lab8
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 14.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:55:02  SEPTEMBER 28, 2015"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -entity DE2_115_Default -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -entity DE2_115_Default -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -entity DE2_115_Default -section_id "Root Region"
@@ -591,55 +591,9 @@ set_location_assignment PIN_D5 -to OTG_INT[1]
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name SMART_RECOMPILE ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "keyboard:key1"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "keyboard:key1"
-set_global_assignment -name PARTITION_COLOR 39423 -section_id "keyboard:key1"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "HexDriver:hex_inst_0"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "HexDriver:hex_inst_0"
-set_global_assignment -name PARTITION_COLOR 52377 -section_id "HexDriver:hex_inst_0"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "HexDriver:hex_inst_1"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "HexDriver:hex_inst_1"
-set_global_assignment -name PARTITION_COLOR 16776960 -section_id "HexDriver:hex_inst_1"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "HexDriver:hex_inst_2"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "HexDriver:hex_inst_2"
-set_global_assignment -name PARTITION_COLOR 16711935 -section_id "HexDriver:hex_inst_2"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "HexDriver:hex_inst_3"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "HexDriver:hex_inst_3"
-set_global_assignment -name PARTITION_COLOR 65535 -section_id "HexDriver:hex_inst_3"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "HexDriver:hex_inst_4"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "HexDriver:hex_inst_4"
-set_global_assignment -name PARTITION_COLOR 16777164 -section_id "HexDriver:hex_inst_4"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "HexDriver:hex_inst_5"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "HexDriver:hex_inst_5"
-set_global_assignment -name PARTITION_COLOR 10198015 -section_id "HexDriver:hex_inst_5"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "rxycalc:rmouse"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "rxycalc:rmouse"
-set_global_assignment -name PARTITION_COLOR 32896 -section_id "rxycalc:rmouse"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "lab8_soc:u0"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "lab8_soc:u0"
-set_global_assignment -name PARTITION_COLOR 14622752 -section_id "lab8_soc:u0"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "vga_clk:vga_clk_instance"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "vga_clk:vga_clk_instance"
-set_global_assignment -name PARTITION_COLOR 2105567 -section_id "vga_clk:vga_clk_instance"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "VGA_controller:vga_controller_instance"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "VGA_controller:vga_controller_instance"
-set_global_assignment -name PARTITION_COLOR 2154272 -section_id "VGA_controller:vga_controller_instance"
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id "false_map:f0"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "false_map:f0"
-set_global_assignment -name PARTITION_COLOR 16037301 -section_id "false_map:f0"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "rxycalc:r"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "rxycalc:r"
-set_global_assignment -name PARTITION_COLOR 11908596 -section_id "rxycalc:r"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "artrom:a0"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "artrom:a0"
-set_global_assignment -name PARTITION_COLOR 11924661 -section_id "artrom:a0"
-set_global_assignment -name PARTITION_NETLIST_TYPE POST_FIT -section_id "main_menu:menu0"
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id "main_menu:menu0"
-set_global_assignment -name PARTITION_COLOR 11925238 -section_id "main_menu:menu0"
 set_global_assignment -name SYSTEMVERILOG_FILE hpi_io_intf.sv
 set_global_assignment -name QIP_FILE lab8_soc/synthesis/lab8_soc.qip
 set_global_assignment -name SYSTEMVERILOG_FILE keyboard.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ball.sv
 set_global_assignment -name SYSTEMVERILOG_FILE rxycalc.sv
 set_global_assignment -name SYSTEMVERILOG_FILE VGA_controller.sv
 set_global_assignment -name SYSTEMVERILOG_FILE lab8.sv
@@ -657,19 +611,33 @@ set_global_assignment -name QIP_FILE ram_chunk0.qip
 set_global_assignment -name QIP_FILE ram_chunk1.qip
 set_global_assignment -name QIP_FILE ram_chunk2.qip
 set_global_assignment -name QIP_FILE ram_chunk3.qip
+set_global_assignment -name SYSTEMVERILOG_FILE time_generator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE backpack.sv
+set_global_assignment -name QIP_FILE hand_bg.qip
+set_global_assignment -name QIP_FILE hand_chest.qip
+set_global_assignment -name QIP_FILE hand_coal.qip
+set_global_assignment -name QIP_FILE hand_craftingtable.qip
+set_global_assignment -name QIP_FILE hand_furnace.qip
+set_global_assignment -name QIP_FILE hand_goldore.qip
+set_global_assignment -name QIP_FILE hand_ironore.qip
+set_global_assignment -name QIP_FILE hand_rock.qip
+set_global_assignment -name QIP_FILE hand_soil.qip
+set_global_assignment -name QIP_FILE hand_cobblestone.qip
+set_global_assignment -name QIP_FILE hand_wood.qip
+set_global_assignment -name QIP_FILE hand_woodenplanks.qip
+set_global_assignment -name QIP_FILE hand_pickaxediamond.qip
+set_global_assignment -name QIP_FILE hand_pickaxegold.qip
+set_global_assignment -name QIP_FILE hand_pickaxeiron.qip
+set_global_assignment -name QIP_FILE hand_pickaxestone.qip
+set_global_assignment -name QIP_FILE hand_pickaxewood.qip
+set_global_assignment -name QIP_FILE hand_axediamond.qip
+set_global_assignment -name QIP_FILE hand_axegold.qip
+set_global_assignment -name QIP_FILE hand_axeiron.qip
+set_global_assignment -name QIP_FILE hand_axestone.qip
+set_global_assignment -name QIP_FILE hand_axewood.qip
+set_global_assignment -name QIP_FILE hand_diamond.qip
+set_global_assignment -name QIP_FILE hand_goldingot.qip
+set_global_assignment -name QIP_FILE hand_ironingot.qip
+set_global_assignment -name QIP_FILE hand_stick.qip
+set_global_assignment -name QIP_FILE handon_pointers.qip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY hexin_b15c1 -to "HexDriver:hex_inst_0" -section_id "HexDriver:hex_inst_0"
-set_instance_assignment -name PARTITION_HIERARCHY hexin_f3821 -to "HexDriver:hex_inst_1" -section_id "HexDriver:hex_inst_1"
-set_instance_assignment -name PARTITION_HIERARCHY hexin_e4e71 -to "HexDriver:hex_inst_2" -section_id "HexDriver:hex_inst_2"
-set_instance_assignment -name PARTITION_HIERARCHY hexin_e6011 -to "HexDriver:hex_inst_3" -section_id "HexDriver:hex_inst_3"
-set_instance_assignment -name PARTITION_HIERARCHY hexin_f80f1 -to "HexDriver:hex_inst_4" -section_id "HexDriver:hex_inst_4"
-set_instance_assignment -name PARTITION_HIERARCHY hexin_f5941 -to "HexDriver:hex_inst_5" -section_id "HexDriver:hex_inst_5"
-set_instance_assignment -name PARTITION_HIERARCHY vgaco_876b1 -to "VGA_controller:vga_controller_instance" -section_id "VGA_controller:vga_controller_instance"
-set_instance_assignment -name PARTITION_HIERARCHY a0_2a8d1 -to "color_mapper:color_instance|artrom:a0" -section_id "artrom:a0"
-set_instance_assignment -name PARTITION_HIERARCHY f0_c77f1 -to "color_mapper:color_instance|false_map:f0" -section_id "false_map:f0"
-set_instance_assignment -name PARTITION_HIERARCHY key1_56a41 -to "keyboard:key1" -section_id "keyboard:key1"
-set_instance_assignment -name PARTITION_HIERARCHY u0_b5091 -to "lab8_soc:u0" -section_id "lab8_soc:u0"
-set_instance_assignment -name PARTITION_HIERARCHY menu0_48831 -to "color_mapper:color_instance|main_menu:menu0" -section_id "main_menu:menu0"
-set_instance_assignment -name PARTITION_HIERARCHY r_e6f71 -to "color_mapper:color_instance|rxycalc:r" -section_id "rxycalc:r"
-set_instance_assignment -name PARTITION_HIERARCHY rmous_c80c1 -to "rxycalc:rmouse" -section_id "rxycalc:rmouse"
-set_instance_assignment -name PARTITION_HIERARCHY vgacl_79c51 -to "vga_clk:vga_clk_instance" -section_id "vga_clk:vga_clk_instance"

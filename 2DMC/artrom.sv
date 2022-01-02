@@ -14,7 +14,7 @@ module artrom
 );
 
 logic [10:0] addr;
-assign addr=(39-rely)*11'd40+relx;
+assign addr=(rely)*11'd40+relx;
 logic [23:0] bedrock_pixel,wood_pixel,stone_pixel,dirt_pixel,diamond_ore_pixel,furnace_pixel,gold_ore_pixel,
 grass_pixel,iron_ore_pixel,leaves_pixel,coal_ore_pixel,crafting_table_pixel,chest_pixel,cobblestone_pixel,wooden_planks_pixel,steve_pixel;
 

@@ -1,6 +1,6 @@
 Flow report for lab8
-Fri Dec 24 21:46:29 2021
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Sun Jan 02 20:04:46 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
 ---------------------
@@ -37,26 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 24 21:46:16 2021           ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
-; Revision Name                      ; lab8                                            ;
-; Top-level Entity Name              ; lab8                                            ;
-; Family                             ; Cyclone IV E                                    ;
-; Device                             ; EP4CE115F29C7                                   ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 20,123 / 114,480 ( 18 % )                       ;
-;     Total combinational functions  ; 19,053 / 114,480 ( 17 % )                       ;
-;     Dedicated logic registers      ; 3,416 / 114,480 ( 3 % )                         ;
-; Total registers                    ; 3531                                            ;
-; Total pins                         ; 169 / 529 ( 32 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 1,534,976 / 3,981,312 ( 39 % )                  ;
-; Embedded Multiplier 9-bit elements ; 4 / 532 ( < 1 % )                               ;
-; Total PLLs                         ; 3 / 4 ( 75 % )                                  ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sun Jan 02 20:04:19 2022       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; lab8                                        ;
+; Top-level Entity Name              ; lab8                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 24,138 / 114,480 ( 21 % )                   ;
+;     Total combinational functions  ; 23,281 / 114,480 ( 20 % )                   ;
+;     Dedicated logic registers      ; 3,480 / 114,480 ( 3 % )                     ;
+; Total registers                    ; 3599                                        ;
+; Total pins                         ; 169 / 529 ( 32 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 2,153,472 / 3,981,312 ( 54 % )              ;
+; Embedded Multiplier 9-bit elements ; 4 / 532 ( < 1 % )                           ;
+; Total PLLs                         ; 3 / 4 ( 75 % )                              ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/21/2021 15:17:59 ;
+; Start date & time ; 01/02/2022 19:52:51 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab8                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+------------------------------------------------------------+---------------+-----------------+----------------+
 ; Assignment Name                      ; Value                                                      ; Default Value ; Entity Name     ; Section Id     ;
 +--------------------------------------+------------------------------------------------------------+---------------+-----------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 9474728826230.164007107911152                              ; --            ; --              ; --             ;
+; COMPILER_SIGNATURE_ID                ; 220964530223446.164112436936348                            ; --            ; --              ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                         ; --            ; --              ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                                                  ; --            ; --              ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; None                                                       ; --            ; --              ; eda_simulation ;
@@ -90,6 +90,41 @@ refer to the applicable agreement for further details.
 ; MISC_FILE                            ; lab8_soc/synthesis/../lab8_soc.cmp                         ; --            ; --              ; --             ;
 ; MISC_FILE                            ; lab8_soc/synthesis/../../lab8_soc.qsys                     ; --            ; --              ; --             ;
 ; MISC_FILE                            ; vga_clk.ppf                                                ; --            ; --              ; --             ;
+; MISC_FILE                            ; memclk_bb.v                                                ; --            ; --              ; --             ;
+; MISC_FILE                            ; memclk.ppf                                                 ; --            ; --              ; --             ;
+; MISC_FILE                            ; ram_chunk0_bb.v                                            ; --            ; --              ; --             ;
+; MISC_FILE                            ; ram_chunk1_bb.v                                            ; --            ; --              ; --             ;
+; MISC_FILE                            ; ram_chunk2_bb.v                                            ; --            ; --              ; --             ;
+; MISC_FILE                            ; ram_chunk3_bb.v                                            ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_bg_bb.v                                               ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_chest_bb.v                                            ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_coal_bb.v                                             ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_craftingtable_bb.v                                    ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_furnace_bb.v                                          ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_goldore_bb.v                                          ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_ironore_bb.v                                          ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_rock_bb.v                                             ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_soil_bb.v                                             ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_cobblestone_bb.v                                      ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_wood_bb.v                                             ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_wood_syn.v                                            ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_woodenplanks_bb.v                                     ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_pickaxediamond_bb.v                                   ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_pickaxegold_bb.v                                      ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_pickaxeiron_bb.v                                      ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_pickaxestone_bb.v                                     ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_pickaxewood_bb.v                                      ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_axediamond_bb.v                                       ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_axegold_bb.v                                          ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_axeiron_bb.v                                          ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_axestone_bb.v                                         ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_axewood_bb.v                                          ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_diamond_bb.v                                          ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_goldingot_bb.v                                        ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_ironingot_bb.v                                        ; --            ; --              ; --             ;
+; MISC_FILE                            ; hand_stick_bb.v                                            ; --            ; --              ; --             ;
+; MISC_FILE                            ; handon_pointers_inst.v                                     ; --            ; --              ; --             ;
+; MISC_FILE                            ; handon_pointers_bb.v                                       ; --            ; --              ; --             ;
 ; NUM_PARALLEL_PROCESSORS              ; All                                                        ; --            ; --              ; --             ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family)                     ; --            ; DE2_115_Default ; Top            ;
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family)                     ; --            ; --              ; Top            ;
@@ -114,282 +149,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:25:12     ; 1.0                     ; 1622 MB             ; 00:25:55                           ;
-; Fitter               ; 00:03:07     ; 1.2                     ; 2658 MB             ; 00:08:37                           ;
-; Assembler            ; 00:00:10     ; 1.0                     ; 687 MB              ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:19     ; 1.8                     ; 1149 MB             ; 00:00:30                           ;
-; Analysis & Synthesis ; 00:16:53     ; 10.7                    ; 1667 MB             ; 00:27:35                           ;
-; Partition Merge      ; 00:00:11     ; 1.0                     ; 751 MB              ; 00:00:11                           ;
-; Fitter               ; 00:09:36     ; 1.1                     ; 3248 MB             ; 00:31:51                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 795 MB              ; 00:00:13                           ;
-; Timing Analyzer      ; 00:00:31     ; 1.9                     ; 1394 MB             ; 00:00:53                           ;
-; Analysis & Synthesis ; 00:01:35     ; 1.0                     ; 1706 MB             ; 00:02:18                           ;
-; Partition Merge      ; 00:00:32     ; 1.0                     ; 931 MB              ; 00:00:32                           ;
-; Fitter               ; 00:03:28     ; 1.3                     ; 2660 MB             ; 00:04:31                           ;
-; Assembler            ; 00:00:13     ; 1.0                     ; 796 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:30     ; 1.9                     ; 1402 MB             ; 00:00:54                           ;
-; Analysis & Synthesis ; 00:18:04     ; 1.0                     ; 1708 MB             ; 00:19:19                           ;
-; Partition Merge      ; 00:00:33     ; 1.0                     ; 930 MB              ; 00:00:33                           ;
-; Fitter               ; 00:07:00     ; 1.2                     ; 3347 MB             ; 00:16:15                           ;
-; Assembler            ; 00:00:13     ; 1.0                     ; 802 MB              ; 00:00:13                           ;
-; Timing Analyzer      ; 00:00:31     ; 1.9                     ; 1404 MB             ; 00:00:54                           ;
-; Analysis & Synthesis ; 00:07:29     ; 1.0                     ; 1708 MB             ; 00:08:14                           ;
-; Partition Merge      ; 00:00:32     ; 1.0                     ; 926 MB              ; 00:00:33                           ;
-; Fitter               ; 00:07:17     ; 1.2                     ; 3364 MB             ; 00:15:33                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 800 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:30     ; 2.0                     ; 1408 MB             ; 00:00:54                           ;
-; Analysis & Synthesis ; 00:26:48     ; 2.9                     ; 1708 MB             ; 00:29:47                           ;
-; Partition Merge      ; 00:00:33     ; 1.0                     ; 946 MB              ; 00:00:33                           ;
-; Fitter               ; 00:07:26     ; 1.2                     ; 3391 MB             ; 00:15:56                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 809 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:30     ; 2.0                     ; 1419 MB             ; 00:00:53                           ;
-; Analysis & Synthesis ; 00:30:26     ; 1.0                     ; 1673 MB             ; 00:31:36                           ;
-; Partition Merge      ; 00:00:37     ; 1.0                     ; 938 MB              ; 00:00:37                           ;
-; Fitter               ; 00:07:30     ; 1.2                     ; 3421 MB             ; 00:16:30                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 806 MB              ; 00:00:13                           ;
-; Timing Analyzer      ; 00:00:32     ; 1.9                     ; 1414 MB             ; 00:00:56                           ;
-; Analysis & Synthesis ; 00:20:33     ; 1.9                     ; 1710 MB             ; 00:22:23                           ;
-; Partition Merge      ; 00:00:38     ; 1.0                     ; 945 MB              ; 00:00:38                           ;
-; Fitter               ; 00:07:10     ; 1.2                     ; 3396 MB             ; 00:16:35                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 809 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:31     ; 1.9                     ; 1420 MB             ; 00:00:55                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 694 MB              ; 00:00:38                           ;
-; Analysis & Synthesis ; 00:01:07     ; 1.0                     ; 1635 MB             ; 00:01:29                           ;
-; Analysis & Synthesis ; 00:06:58     ; 3.6                     ; 1173 MB             ; 00:18:54                           ;
-; Partition Merge      ; 00:00:33     ; 1.0                     ; 940 MB              ; 00:00:33                           ;
-; Fitter               ; 00:11:05     ; 1.1                     ; 3486 MB             ; 00:43:23                           ;
-; Assembler            ; 00:00:13     ; 1.0                     ; 826 MB              ; 00:00:13                           ;
-; Timing Analyzer      ; 00:00:36     ; 1.9                     ; 1517 MB             ; 00:01:03                           ;
-; Analysis & Synthesis ; 00:08:17     ; 3.4                     ; 1686 MB             ; 00:15:14                           ;
-; Partition Merge      ; 00:00:33     ; 1.0                     ; 916 MB              ; 00:00:33                           ;
-; Fitter               ; 00:08:45     ; 1.1                     ; 3205 MB             ; 00:27:39                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 784 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:27     ; 2.0                     ; 1321 MB             ; 00:00:49                           ;
-; Analysis & Synthesis ; 00:08:12     ; 3.4                     ; 1677 MB             ; 00:14:30                           ;
-; Partition Merge      ; 00:00:32     ; 1.0                     ; 910 MB              ; 00:00:31                           ;
-; Fitter               ; 00:08:13     ; 1.1                     ; 3153 MB             ; 00:27:53                           ;
-; Assembler            ; 00:00:11     ; 1.0                     ; 785 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:26     ; 2.0                     ; 1312 MB             ; 00:00:46                           ;
-; Analysis & Synthesis ; 00:01:09     ; 1.0                     ; 1642 MB             ; 00:01:31                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 659 MB              ; 00:00:38                           ;
-; Analysis & Synthesis ; 00:08:04     ; 3.4                     ; 1638 MB             ; 00:20:54                           ;
-; Partition Merge      ; 00:00:32     ; 1.0                     ; 938 MB              ; 00:00:33                           ;
-; Analysis & Synthesis ; 00:01:07     ; 1.0                     ; 1672 MB             ; 00:01:28                           ;
-; Analysis & Synthesis ; 00:08:09     ; 3.7                     ; 1166 MB             ; 00:14:07                           ;
-; Partition Merge      ; 00:00:32     ; 1.0                     ; 902 MB              ; 00:00:32                           ;
-; Fitter               ; 00:08:22     ; 1.1                     ; 3158 MB             ; 00:29:47                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 787 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:26     ; 2.0                     ; 1303 MB             ; 00:00:47                           ;
-; Analysis & Synthesis ; 00:08:57     ; 4.3                     ; 1689 MB             ; 00:15:58                           ;
-; Partition Merge      ; 00:00:30     ; 1.0                     ; 908 MB              ; 00:00:31                           ;
-; Analysis & Synthesis ; 00:08:39     ; 2.6                     ; 1679 MB             ; 00:14:05                           ;
-; Partition Merge      ; 00:00:31     ; 1.0                     ; 915 MB              ; 00:00:31                           ;
-; Fitter               ; 00:08:48     ; 1.1                     ; 3172 MB             ; 00:28:12                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 782 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:27     ; 2.0                     ; 1302 MB             ; 00:00:48                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 695 MB              ; 00:00:37                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 663 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:00:23     ; 1.0                     ; 821 MB              ; 00:00:45                           ;
-; Analysis & Synthesis ; 00:13:51     ; 3.6                     ; 1759 MB             ; 00:19:53                           ;
-; Partition Merge      ; 00:00:32     ; 1.0                     ; 922 MB              ; 00:00:32                           ;
-; Fitter               ; 00:13:40     ; 1.1                     ; 3363 MB             ; 00:47:30                           ;
-; Assembler            ; 00:00:13     ; 1.0                     ; 815 MB              ; 00:00:13                           ;
-; Timing Analyzer      ; 00:00:31     ; 2.0                     ; 1393 MB             ; 00:00:56                           ;
-; Analysis & Synthesis ; 00:13:52     ; 1.9                     ; 1767 MB             ; 00:15:12                           ;
-; Partition Merge      ; 00:00:38     ; 1.0                     ; 938 MB              ; 00:00:37                           ;
-; Fitter               ; 00:12:55     ; 1.1                     ; 3348 MB             ; 00:48:12                           ;
-; Assembler            ; 00:00:13     ; 1.0                     ; 815 MB              ; 00:00:13                           ;
-; Timing Analyzer      ; 00:00:28     ; 2.0                     ; 1394 MB             ; 00:00:52                           ;
-; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 870 MB              ; 00:00:50                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 666 MB              ; 00:00:38                           ;
-; Analysis & Synthesis ; 00:01:23     ; 1.4                     ; 994 MB              ; 00:02:29                           ;
-; Partition Merge      ; 00:00:36     ; 1.0                     ; 843 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:01:25     ; 1.4                     ; 1000 MB             ; 00:02:32                           ;
-; Partition Merge      ; 00:00:34     ; 1.0                     ; 843 MB              ; 00:00:34                           ;
-; Fitter               ; 00:01:14     ; 1.2                     ; 2600 MB             ; 00:02:07                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 637 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.7                     ; 990 MB              ; 00:00:16                           ;
-; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 836 MB              ; 00:00:47                           ;
-; Analysis & Synthesis ; 00:01:23     ; 1.4                     ; 965 MB              ; 00:02:30                           ;
-; Partition Merge      ; 00:00:17     ; 1.0                     ; 771 MB              ; 00:00:17                           ;
-; Fitter               ; 00:01:16     ; 1.2                     ; 2545 MB             ; 00:02:09                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 640 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.7                     ; 984 MB              ; 00:00:17                           ;
-; Analysis & Synthesis ; 00:01:26     ; 1.4                     ; 983 MB              ; 00:02:39                           ;
-; Partition Merge      ; 00:00:17     ; 1.0                     ; 771 MB              ; 00:00:17                           ;
-; Fitter               ; 00:01:20     ; 1.2                     ; 2546 MB             ; 00:02:18                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 639 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.7                     ; 982 MB              ; 00:00:17                           ;
-; Analysis & Synthesis ; 00:01:25     ; 1.4                     ; 983 MB              ; 00:02:29                           ;
-; Partition Merge      ; 00:00:17     ; 1.0                     ; 775 MB              ; 00:00:17                           ;
-; Fitter               ; 00:01:20     ; 1.2                     ; 2542 MB             ; 00:02:22                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 643 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.7                     ; 984 MB              ; 00:00:17                           ;
-; Analysis & Synthesis ; 00:01:14     ; 1.4                     ; 920 MB              ; 00:02:10                           ;
-; Partition Merge      ; 00:00:16     ; 1.0                     ; 768 MB              ; 00:00:16                           ;
-; Fitter               ; 00:01:01     ; 1.2                     ; 2519 MB             ; 00:01:43                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 634 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.7                     ; 962 MB              ; 00:00:15                           ;
-; Analysis & Synthesis ; 00:05:08     ; 1.7                     ; 1759 MB             ; 00:07:22                           ;
-; Partition Merge      ; 00:00:27     ; 1.0                     ; 913 MB              ; 00:00:26                           ;
-; Analysis & Synthesis ; 00:05:36     ; 1.8                     ; 1776 MB             ; 00:07:44                           ;
-; Partition Merge      ; 00:00:27     ; 1.0                     ; 910 MB              ; 00:00:26                           ;
-; Analysis & Synthesis ; 00:05:05     ; 1.7                     ; 1782 MB             ; 00:07:17                           ;
-; Partition Merge      ; 00:00:26     ; 1.0                     ; 914 MB              ; 00:00:26                           ;
-; Fitter               ; 00:08:44     ; 1.1                     ; 3165 MB             ; 00:29:59                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 787 MB              ; 00:00:12                           ;
-; Timing Analyzer      ; 00:00:26     ; 2.0                     ; 1322 MB             ; 00:00:46                           ;
-; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 869 MB              ; 00:00:44                           ;
-; Analysis & Synthesis ; 00:01:24     ; 1.4                     ; 942 MB              ; 00:02:32                           ;
-; Partition Merge      ; 00:00:30     ; 1.0                     ; 840 MB              ; 00:00:30                           ;
-; Fitter               ; 00:01:29     ; 1.2                     ; 2707 MB             ; 00:02:26                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 649 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.8                     ; 999 MB              ; 00:00:18                           ;
-; Analysis & Synthesis ; 00:01:30     ; 1.4                     ; 945 MB              ; 00:02:38                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 811 MB              ; 00:00:19                           ;
-; Fitter               ; 00:01:39     ; 1.2                     ; 2666 MB             ; 00:02:40                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 649 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.8                     ; 1000 MB             ; 00:00:19                           ;
-; Analysis & Synthesis ; 00:01:28     ; 1.4                     ; 952 MB              ; 00:02:37                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 809 MB              ; 00:00:19                           ;
-; Fitter               ; 00:01:38     ; 1.2                     ; 2665 MB             ; 00:02:46                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 650 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.8                     ; 1002 MB             ; 00:00:18                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 664 MB              ; 00:00:34                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 642 MB              ; 00:00:35                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 642 MB              ; 00:00:35                           ;
-; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 820 MB              ; 00:00:44                           ;
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 820 MB              ; 00:00:42                           ;
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 820 MB              ; 00:00:42                           ;
-; Analysis & Synthesis ; 00:01:24     ; 1.4                     ; 926 MB              ; 00:02:33                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 807 MB              ; 00:00:19                           ;
-; Fitter               ; 00:01:29     ; 1.2                     ; 2669 MB             ; 00:02:24                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 652 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.8                     ; 1001 MB             ; 00:00:18                           ;
-; Analysis & Synthesis ; 00:01:28     ; 1.4                     ; 953 MB              ; 00:03:01                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 807 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:27     ; 1.2                     ; 2672 MB             ; 00:02:25                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 649 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.7                     ; 999 MB              ; 00:00:17                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 661 MB              ; 00:00:35                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 642 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 642 MB              ; 00:00:34                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 642 MB              ; 00:00:37                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 646 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 804 MB              ; 00:00:43                           ;
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 801 MB              ; 00:00:41                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 643 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 801 MB              ; 00:00:41                           ;
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 802 MB              ; 00:00:42                           ;
-; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 799 MB              ; 00:00:42                           ;
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 802 MB              ; 00:00:40                           ;
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 799 MB              ; 00:00:41                           ;
-; Analysis & Synthesis ; 00:00:20     ; 1.0                     ; 800 MB              ; 00:00:41                           ;
-; Analysis & Synthesis ; 00:01:47     ; 1.5                     ; 981 MB              ; 00:02:58                           ;
-; Partition Merge      ; 00:00:17     ; 1.0                     ; 789 MB              ; 00:00:17                           ;
-; Fitter               ; 00:01:34     ; 1.2                     ; 2596 MB             ; 00:02:53                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 658 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.8                     ; 1024 MB             ; 00:00:19                           ;
-; Analysis & Synthesis ; 00:01:47     ; 1.5                     ; 999 MB              ; 00:02:57                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 794 MB              ; 00:00:19                           ;
-; Fitter               ; 00:01:34     ; 1.2                     ; 2596 MB             ; 00:02:50                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 657 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.8                     ; 1016 MB             ; 00:00:20                           ;
-; Analysis & Synthesis ; 00:01:49     ; 1.5                     ; 984 MB              ; 00:02:58                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 793 MB              ; 00:00:19                           ;
-; Analysis & Synthesis ; 00:01:42     ; 1.0                     ; 1055 MB             ; 00:02:22                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 794 MB              ; 00:00:19                           ;
-; Fitter               ; 00:01:25     ; 1.2                     ; 2599 MB             ; 00:02:36                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 655 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.9                     ; 1018 MB             ; 00:00:20                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 659 MB              ; 00:00:37                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 642 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 642 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 887 MB              ; 00:00:52                           ;
-; Analysis & Synthesis ; 00:01:50     ; 1.5                     ; 984 MB              ; 00:02:57                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 798 MB              ; 00:00:19                           ;
-; Fitter               ; 00:01:36     ; 1.2                     ; 2600 MB             ; 00:02:52                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 658 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.8                     ; 1018 MB             ; 00:00:20                           ;
-; Analysis & Synthesis ; 00:01:47     ; 1.4                     ; 1001 MB             ; 00:02:57                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 798 MB              ; 00:00:19                           ;
-; Fitter               ; 00:01:31     ; 1.2                     ; 2604 MB             ; 00:02:47                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 659 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.8                     ; 1027 MB             ; 00:00:19                           ;
-; Analysis & Synthesis ; 00:01:46     ; 1.4                     ; 1005 MB             ; 00:02:53                           ;
-; Partition Merge      ; 00:00:20     ; 1.0                     ; 799 MB              ; 00:00:20                           ;
-; Fitter               ; 00:01:37     ; 1.2                     ; 2606 MB             ; 00:02:57                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 661 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.8                     ; 1024 MB             ; 00:00:20                           ;
-; Analysis & Synthesis ; 00:01:46     ; 1.4                     ; 1004 MB             ; 00:02:55                           ;
-; Partition Merge      ; 00:00:21     ; 1.0                     ; 789 MB              ; 00:00:21                           ;
-; Fitter               ; 00:01:30     ; 1.2                     ; 2608 MB             ; 00:02:45                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 658 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.8                     ; 1029 MB             ; 00:00:20                           ;
-; Analysis & Synthesis ; 00:01:20     ; 1.3                     ; 939 MB              ; 00:02:49                           ;
-; Partition Merge      ; 00:00:19     ; 1.0                     ; 776 MB              ; 00:00:20                           ;
-; Fitter               ; 00:01:09     ; 1.2                     ; 2549 MB             ; 00:02:03                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 638 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.7                     ; 979 MB              ; 00:00:16                           ;
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 656 MB              ; 00:00:37                           ;
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 643 MB              ; 00:00:36                           ;
-; Analysis & Synthesis ; 00:01:17     ; 1.3                     ; 908 MB              ; 00:02:19                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 773 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:11     ; 1.2                     ; 2538 MB             ; 00:02:04                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 637 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.7                     ; 979 MB              ; 00:00:16                           ;
-; Analysis & Synthesis ; 00:01:18     ; 1.3                     ; 927 MB              ; 00:02:23                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 776 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:10     ; 1.2                     ; 2537 MB             ; 00:02:03                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 637 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.7                     ; 975 MB              ; 00:00:15                           ;
-; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 891 MB              ; 00:01:28                           ;
-; Analysis & Synthesis ; 00:01:16     ; 1.3                     ; 927 MB              ; 00:02:13                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 773 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:09     ; 1.2                     ; 2530 MB             ; 00:01:58                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 639 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.7                     ; 974 MB              ; 00:00:15                           ;
-; Analysis & Synthesis ; 00:01:16     ; 1.3                     ; 939 MB              ; 00:02:14                           ;
-; Partition Merge      ; 00:00:17     ; 1.0                     ; 775 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:05     ; 1.2                     ; 2532 MB             ; 00:01:57                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 639 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.7                     ; 975 MB              ; 00:00:16                           ;
-; Analysis & Synthesis ; 00:01:16     ; 1.3                     ; 939 MB              ; 00:02:16                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 773 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:09     ; 1.2                     ; 2530 MB             ; 00:02:01                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 637 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.7                     ; 982 MB              ; 00:00:15                           ;
-; Analysis & Synthesis ; 00:01:16     ; 1.3                     ; 938 MB              ; 00:02:16                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 765 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:09     ; 1.2                     ; 2534 MB             ; 00:02:03                           ;
-; Assembler            ; 00:00:07     ; 1.0                     ; 635 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:10     ; 1.7                     ; 974 MB              ; 00:00:15                           ;
-; Analysis & Synthesis ; 00:01:27     ; 1.4                     ; 966 MB              ; 00:02:33                           ;
-; Partition Merge      ; 00:00:18     ; 1.0                     ; 781 MB              ; 00:00:18                           ;
-; Fitter               ; 00:01:28     ; 1.2                     ; 2579 MB             ; 00:02:37                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 664 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.9                     ; 1023 MB             ; 00:00:18                           ;
-; Analysis & Synthesis ; 00:01:28     ; 1.4                     ; 986 MB              ; 00:02:36                           ;
-; Partition Merge      ; 00:00:20     ; 1.0                     ; 789 MB              ; 00:00:20                           ;
-; Fitter               ; 00:01:21     ; 1.2                     ; 2590 MB             ; 00:02:26                           ;
-; Assembler            ; 00:00:08     ; 1.0                     ; 665 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.8                     ; 1023 MB             ; 00:00:20                           ;
-; Analysis & Synthesis ; 00:01:30     ; 1.4                     ; 982 MB              ; 00:02:58                           ;
-; Partition Merge      ; 00:00:20     ; 1.0                     ; 791 MB              ; 00:00:20                           ;
-; Fitter               ; 00:01:21     ; 1.2                     ; 2591 MB             ; 00:02:29                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 665 MB              ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.9                     ; 1024 MB             ; 00:00:19                           ;
-; Analysis & Synthesis ; 00:01:29     ; 1.4                     ; 982 MB              ; 00:02:34                           ;
-; Partition Merge      ; 00:00:20     ; 1.0                     ; 786 MB              ; 00:00:20                           ;
-; Fitter               ; 00:01:28     ; 1.2                     ; 2589 MB             ; 00:02:41                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 665 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:13     ; 1.8                     ; 1018 MB             ; 00:00:20                           ;
-; Analysis & Synthesis ; 00:01:28     ; 1.4                     ; 985 MB              ; 00:02:33                           ;
-; Partition Merge      ; 00:00:20     ; 1.0                     ; 790 MB              ; 00:00:20                           ;
-; Fitter               ; 00:01:22     ; 1.2                     ; 2589 MB             ; 00:02:31                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 666 MB              ; 00:00:08                           ;
-; Timing Analyzer      ; 00:00:11     ; 1.9                     ; 1017 MB             ; 00:00:19                           ;
-; Total                ; 08:41:54     ; --                      ; --                  ; 16:15:51                           ;
+; Analysis & Synthesis ; 00:08:40     ; 1.0                     ; 5192 MB             ; 00:08:58                           ;
+; Fitter               ; 00:02:03     ; 1.1                     ; 6251 MB             ; 00:04:30                           ;
+; Assembler            ; 00:00:08     ; 1.0                     ; 4786 MB             ; 00:00:09                           ;
+; Timing Analyzer      ; 00:00:24     ; 1.7                     ; 5084 MB             ; 00:00:31                           ;
+; Total                ; 00:11:15     ; --                      ; --                  ; 00:14:08                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -398,281 +162,10 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Analysis & Synthesis ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Partition Merge      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; V115             ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-A9VR74P  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -680,277 +173,6 @@ refer to the applicable agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
-quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
-quartus_sta lab8 -c lab8
-quartus_map --read_settings_files=on --write_settings_files=off lab8 -c lab8
-quartus_cdb --read_settings_files=off --write_settings_files=off lab8 -c lab8 --merge=on
 quartus_fit --read_settings_files=off --write_settings_files=off lab8 -c lab8
 quartus_asm --read_settings_files=off --write_settings_files=off lab8 -c lab8
 quartus_sta lab8 -c lab8
