@@ -6,7 +6,7 @@ import os
 colors = []
 
 
-for root, dirs, files in os.walk(r"Pictures may used\bmp"):
+for root, dirs, files in os.walk(r"temp"):
     for file in files:
         file_name, file_extension = os.path.splitext(file)
         if file_extension == '.bmp':

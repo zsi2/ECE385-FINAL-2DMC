@@ -17,10 +17,16 @@ samplerate, data = wavfile.read(filename)
 left = data[:,0]
 right = data[:,1]
 
-f = open(r"Music\Minecraft_left.txt", 'w')
-g = open(r"Music\Minecraft_right.txt", 'w')
-for i in range(len(left)):
-    data_l = "16'h" + dec2bin(left[i])
-    data_r = "16'h" + dec2bin(right[i])
-    f.write(data_l + '\n')
-    g.write(data_r + '\n')
+# f = open(r"Music\Minecraft_left.txt", 'w')
+# g = open(r"Music\Minecraft_right.txt", 'w')
+# for i in range(len(left)):
+#     #data_l = "16'h" + dec2bin(left[i])
+#     data_l = left[i]
+#     #data_r = "16'h" + dec2bin(right[i])
+#     data_r = right[i]
+#     f.write(str(data_l) + ',')
+#     g.write(str(data_r) + ',')
+# f.close()
+# g.close()
+
+print(len(left))

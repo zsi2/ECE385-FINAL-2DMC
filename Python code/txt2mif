@@ -1,0 +1,24 @@
+import os
+
+for root, dirs, files in os.walk(r"temp"):
+    for file in files:
+        file_name, file_extension = os.path.splitext(file)
+        if file_extension == '.txt':
+            g = open(os.path.join(root, file_name + '.mif'), 'w')
+            f = open(os.path.join(root, file), 'r')
+            width = 0 
+            for line in f:
+                width = len(line) - 1
+                break;
+            g.write('WIDTH=' + str(width) + ';\n')
+            depth = len(f.readlines()) + 1
+            g.write('DEPTH=' + str(depth) + ';\n')
+            g.write('ADDRESS_RADIX=UNS;\n')
+            g.write('DATA_RADIX=BIN;\n')
+            f = open(os.path.join(root, file), 'r')
+            g.write('CONTENT BEGIN\n')
+            i = 0
+            for line in f:
+                g.write(str(i) + ' : ' + line)
+                i += 1
+            g.write('END;\n')
